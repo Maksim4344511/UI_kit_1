@@ -54,7 +54,7 @@ ul {
 .darckShade75{
     left: 150px;
     top: 235px;
-    background: rgba(31, 32, 65, 0.75);;
+    background: rgba($darcShade, 0.75);
 }
 .darckShade75:after {
     content: "Dark Shade 75% #1F2041";
