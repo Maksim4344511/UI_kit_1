@@ -1,0 +1,137 @@
+$darcShade:rgba(31, 32, 65, 1);
+
+.ColorsType {
+    position: relative;
+    width: 1440px;
+    height: 900px;
+    background: #FFFFFF;
+}
+
+.vector{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 30px;
+    top: 30px;
+    background: rgba(31, 32, 65, 0.25);
+}
+
+ul {
+    list-style: none;
+}
+
+.boxColor {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #1F2041;
+}
+
+.darckShade100 {
+    left: 150px;
+    top: 145px;
+    background: $darcShade;
+}
+
+.darckShade100:after{
+    content: "Dark Shade 100% #1F2041";
+    position: absolute;
+    width: 171px;
+    height: 56px;
+    left: 260-150px;
+    top: 152-145px;
+}
+
+.darckShade75{
+    left: 150px;
+    top: 235px;
+    background: rgba(31, 32, 65, 0.75);;
+}
+.darckShade75:after {
+    content: "Dark Shade 75% #1F2041";
+    position: absolute;
+    width: 161px;
+    height: 56px;
+    left: 260-150px;
+    top: 242-235px;
+
+}
+
+.darckShade50{
+    left: 149.74px;
+    top: 324.56px;
+    background: rgba(31, 32, 65, 0.5);
+} 
+.darckShade50:after {
+    content: "Dark Shade 50% #1F2041";
+    position: absolute;
+    width: 162px;
+    height: 56px;
+    left: 260-149.74px;
+    top: 332-324.56px;
+}
+.darckShade25{
+    left: 150px;
+    top: 415px;
+    background: rgba(31, 32, 65, 0.25);
+}
+.darckShade25:after {
+    content: "Dark Shade 25% #1F2041";
+    position: absolute;
+    width: 161px;
+    height: 56px;
+    left: 260-150px;
+    top: 422-415px;
+}
+.darckShade5{
+    left: 150px;
+    top: 505px;    
+    background: rgba(31, 32, 65, 0.05);
+    border-radius: 6px;
+}
+.darckShade5:after {
+    content: "Dark Shade 5% #1F2041";
+    position: absolute;
+    width: 149px;
+    height: 56px;
+    left: 260-150px;
+    top: 512-505px;
+}
+.purple{
+    left: 150px;
+    top: 595px;
+    background: #BC9CFF;
+} 
+.purple:after {
+    content: "Purple #BC9CFF";
+    position: absolute;
+    width: 91px;
+    height: 56px;
+    left: 260-150px;
+    top: 602-595px;
+}
+
+.green{
+    left: 150px;
+    top: 685px;
+    background: #6FCF97;
+    border-radius: 6px;
+}
+
+.green:after {
+    content: "Green #6FCF97";
+    position: absolute;
+    width: 86px;
+    height: 56px;
+    left: 260-150px;
+    top: 692-685px;
+}
