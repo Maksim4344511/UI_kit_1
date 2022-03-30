@@ -4,6 +4,7 @@ const miniCss = require('mini-css-extract-plugin');
 const TerserPlugin = require("terser-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+
 const buildType = process.env.BUILD_TYPE ? process.env.BUILD_TYPE : constants.modes.dev;
 
 const result = {}
@@ -13,7 +14,7 @@ result.plugins = [
      filename: 'styles.css',
   }),
   new HtmlWebpackPlugin({
-     template: path.join(__dirname, '../src/index.html'),
+     template: path.join(__dirname, '../src/index.pug'),
      minify: buildType === constants.modes.dev ? false : true
   })
 ]
@@ -24,6 +25,12 @@ result.module = {
       test: /\.(png|svg|jpg|jpeg|gif)$/i,
       type: 'asset/resource',
     },
+    {
+      test: /\.pug$/,
+      loader: 'pug-loader',
+      exclude: /(node_modules|bower_components)/,
+    },
+
       { test: /\.(s*)css$/, use: [
         miniCss.loader,
 
