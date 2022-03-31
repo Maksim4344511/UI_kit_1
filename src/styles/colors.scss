@@ -6,23 +6,52 @@
     top: 145px;
 }
 
-.boxColor {
+.boxSize {
     position: absolute;
     width: 70px;
     height: 70px;
-    left: 150px;
-    top: 145px;
-    background: #1F2041;
-    border-radius: 6px;
+    border-radius: 6px;    
 }
-.darckShade {
-    position: relative;
+
+.darkShade100{
+    background: #1F2041;    
+}
+
+.darkShade75 {
+    top: 235-145px;
+    background: rgba(31, 32, 65, 0.75);
+}
+.darkShade50 {
+    top: 324.56-150px;
+    background: rgba(31, 32, 65, 0.5);
+}
+.darkShade25 {
+    top: 415-150px;
+    background: rgba(31, 32, 65, 0.25); 
+}
+.darkShade5 {
+    top: 505-150px;
+    background: rgba(31, 32, 65, 0.05);
+}
+.purpleBox {
+    top: 595-150px;
+    background: #BC9CFF;
+}
+.greenBox{
+    top: 685-150px;
+    background: #6FCF97;
+}
+
+.colorsValue {
+    position: absolute;
     width: 171px;
     height: 56px;
-    left: 260px;
-    top: 152px;
+    left: 260-150px;
+    top: 152-145px;
 
-    font-family: 'Montserrat';
+}
+.colorName{
+    font-family: 'Quicksand';
     font-style: normal;
     font-weight: 700;
     font-size: 19px;
@@ -30,5 +59,17 @@
     display: flex;
     align-items: center;
     color: #1F2041;
+    margin:0;
+}
+.colorValue {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #1F2041;
+    margin:0;
 }
 

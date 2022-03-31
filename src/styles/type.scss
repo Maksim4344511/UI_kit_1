@@ -1,0 +1,149 @@
+.groupTypeFont{
+    position: absolute;
+    width: 436px;
+    height: 321px;
+    left: 846px;
+    top: 145px;
+}
+
+.nameTypeH1 {
+    position: absolute;
+    width: 29px;
+    height: 30px;
+    left: 854-846px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+    color: rgba(31, 32, 65, 0.25);
+}
+.valueH1 {
+    position: absolute;
+    width: 369px;
+    height: 59px;
+    left: 913-846px;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1F2041;
+}
+
+.nameTypeH2{
+    position: absolute;
+    width: 27px;
+    height: 24px;
+    left: 856-846px;
+    top: 255-145px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: right;
+    color: rgba(31, 32, 65, 0.25);
+}
+
+.valueH2{
+    position: absolute;
+    width: 312px;
+    height: 47px;
+    left: 913-846px;
+    top: 255-145px;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1F2041;
+}
+
+.nameTypeH3{
+    position: absolute;
+width: 17px;
+height: 15px;
+left: 866-846px;
+top: 353-145px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+text-align: right;
+text-transform: uppercase;
+
+/* Dark 25% */
+
+color: rgba(31, 32, 65, 0.25);
+}
+
+.valueH3{
+    position: absolute;
+width: 186px;
+height: 15px;
+left: 913-846px;
+top: 353-145px;
+
+text-align: left;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #1F2041;
+
+}
+
+.nameTypeBody {
+    position: absolute;
+width: 37px;
+height: 24px;
+left: 846-846px;
+top: 418-145px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+text-align: right;
+
+/* Dark 25% */
+
+color: rgba(31, 32, 65, 0.25);
+}
+
+.valueBody {
+    position: absolute;
+width: 301px;
+height: 48px;
+left: 913-846px;
+top: 418-145px;
+
+text-align: left;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+
+/* Dark 75% */
+
+color: rgba(31, 32, 65, 0.75);
+}
