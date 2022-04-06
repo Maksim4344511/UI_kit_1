@@ -1,0 +1,81 @@
+.form-input-date-f1{
+    left: 141px;
+}
+
+.form-input-date-f2{
+    left: 311px;
+}
+.form-input-filter-date-dropdown {
+    position: absolute;
+    width: 266px;
+    height: 65px;
+    left: 141px;
+    top: 607px;
+    
+}
+.form-input-date{
+    position: absolute;
+    width: 150px;
+    height: 64.44px;
+    top: 502px;
+}
+
+.form-input-date__type{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #1F2041;
+    box-sizing: border-box;
+}
+
+.form-input-filter-date-dropdown__type{
+    width: 197px;
+    height: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;    
+}
+
+.form-input-date__input-field{
+    width: 150px;
+    height: 44px;
+    box-sizing: border-box;
+}
+
+.form-input-filter-date-dropdown__input-field {
+    width: 266px;
+    height: 44px;
+    box-sizing: border-box;
+}
+
+.form-input-date__dropdown-date{
+    width: 150px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: rgba(31, 32, 65, 0.75);
+    padding: 12px;
+}
+
+.form-input-filter-date-dropdown__dropdown-date {
+    width: 266px;
+    height: 44px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: rgba(31, 32, 65, 0.75);
+    padding: 12px;
+}
+

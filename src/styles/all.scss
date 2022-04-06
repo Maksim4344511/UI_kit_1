@@ -1,7 +1,10 @@
-//@import 'cleanup.scss';
-@import 'main.scss';
-@import 'logo.scss';
-@import 'colors.scss';
-@import 'type.scss';
 
-//@import 'test.scss';
+@import 'main.scss';
+@import '../styles/colorsType/colors.scss';
+@import '../styles/colorsType/logo.scss';
+@import '../styles/colorsType/type.scss';
+@import '../styles/FormElement/formInput.scss';
+@import '../styles/FormElement/formInputDate.scss';
+@import '../styles/FormElement/subscriptionTextField.scss';
+@import '../styles/FormElement/Dropdown.scss';
+@import '../styles/FormElement/Dropdown_version.scss';
