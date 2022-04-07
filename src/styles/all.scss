@@ -1,10 +1,10 @@
 
-@import 'main.scss';
-@import '../styles/colorsType/colors.scss';
-@import '../styles/colorsType/logo.scss';
-@import '../styles/colorsType/type.scss';
-@import '../styles/FormElement/formInput.scss';
-@import '../styles/FormElement/formInputDate.scss';
-@import '../styles/FormElement/subscriptionTextField.scss';
-@import '../styles/FormElement/Dropdown.scss';
-@import '../styles/FormElement/Dropdown_version.scss';
+@use 'main';
+@use '../styles/colorsType/colors.scss';
+@use '../styles/colorsType/logo.scss';
+@use '../styles/colorsType/type.scss';
+@use '../styles/FormElement/formInput.scss';
+@use '../styles/FormElement/formInputDate.scss';
+@use '../styles/FormElement/subscriptionTextField.scss';
+@use '../styles/FormElement/Dropdown.scss';
+@use '../styles/FormElement/Dropdown_version.scss';

@@ -1,0 +1,26 @@
+.dropdown-expanded-rooms
+    .dropdown-expanded-rooms__title
+        .dropdown-expanded-rooms__type dropdown
+        .dropdown-expanded-rooms__value Default
+    .dropdown-expanded-rooms__input-field
+        select.dropdown-expanded-rooms__dropdown-btn         
+            option.dropdown-expanded-rooms__choice спальни
+                .quantity_inner
+                    button.bt_minus 
+                        include _minus
+                    input.quantity(type='text' value='1' size='2' data-max-count='20' disabled)
+                    button.bt_plus
+                        include _plus
+            option.dropdown-expanded-rooms__choice кровати
+                
+            option.dropdown-expanded-rooms__choice ванные комнаты
+                
+
+
+.quantity_inner
+    button.bt_minus 
+        include _minus
+    input.quantity(type='text' value='1' size='2' data-max-count='20' disabled)
+    button.bt_plus
+        include _plus
+

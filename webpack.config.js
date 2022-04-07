@@ -22,6 +22,11 @@ const paths = globule.find(["src/pug/pages/**/*.pug"]);
 
 module.exports = {
     mode: mode,
+    entry:{
+        scripts: './src/index.js',
+        user: './src/user.js',
+        clean: true,
+},
     output: {
         filename: '[name].[contenthash].js',
         assetModuleFilename: "assets/[hash][ext][query]",
@@ -35,6 +40,11 @@ module.exports = {
         }
     },
     devtool: 'source-map',
+    optimization: {
+        splitChunks:{
+            chunks: 'all',
+        },
+    },
     plugins: [
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css'
@@ -93,9 +103,9 @@ module.exports = {
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
-                    // options: {
-                    //     presets: ['@babel/preset-env']
-                    // }
+                     options: {
+                         presets: ['@babel/preset-env']
+                     }
                 }
             }
         ]

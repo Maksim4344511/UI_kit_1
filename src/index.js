@@ -1,1 +1,2 @@
-import './styles/all.scss'
+import './styles/index.scss'
+import $ from "jquery";
