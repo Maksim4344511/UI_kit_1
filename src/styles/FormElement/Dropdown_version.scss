@@ -54,9 +54,12 @@
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     color: rgba(31, 32, 65, 0.75);
+    cursor: pointer;
 }  
 
-.dropdown-expanded-rooms__choice{
+.dropdown-expanded-rooms__room,
+.dropdown-expanded-rooms__bad,
+.dropdown-expanded-rooms__toul{
     width: 160px;
     height: 24px;
     font-family: 'Montserrat';
