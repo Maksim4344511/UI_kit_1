@@ -1,0 +1,24 @@
+include ../btn-inner/_btn_inner.pug
+
+.dropdown-expanded-rooms    
+    .dropdown-expanded-rooms__title
+        .dropdown-expanded-rooms__type dropdown
+        .dropdown-expanded-rooms__value Default
+    .dropdown-expanded-rooms__input-field
+        +expand_more 
+        input.dropdown-expanded-rooms__dropdown-btn(type = "text" value = "Сколько комнат" disabled)         
+        
+             
+    .dropdown-expanded-rooms__choice      
+        .dropdown-expanded-rooms__rooms
+            div спальни 
+            +quantity_inner            
+        .dropdown-expanded-rooms__beds
+            div кровати
+            +quantity_inner              
+        .dropdown-expanded-rooms__bathroom
+            div ванные комнаты
+            +quantity_inner
+                  
+                
+

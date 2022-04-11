@@ -1,7 +1,7 @@
 mixin quantity_inner
     .quantity_inner
         button.bt_minus 
-            include _minus
+            include ../plus-minus/_minus.pug 
         input.quantity(type='text' value='1' size='2' data-max-count='20' disabled)
         button.bt_plus
-            include _plus
+            include ../plus-minus/_plus.pug

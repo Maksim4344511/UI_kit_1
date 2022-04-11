@@ -43,65 +43,48 @@
     width: 266px;
     height: 44px;
     background: #FFFFFF;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    
     box-sizing: border-box;
+    -webkit-appearance: none;
+    cursor: pointer;
 }
 
 .dropdown-expanded-rooms__dropdown-btn {
     width: 266px;
     height: 44px;
-    background: #FFFFFF;
     border: 1px solid rgba(31, 32, 65, 0.25);
-    box-sizing: border-box;
-    color: rgba(31, 32, 65, 0.75);
-    cursor: pointer;
+    
 }  
 
-.dropdown-expanded-rooms__room,
-.dropdown-expanded-rooms__bad,
-.dropdown-expanded-rooms__toul{
-    width: 160px;
-    height: 24px;
+//выпадающий список
+.dropdown-expanded-rooms__choice {
+    display: flex;
+    flex-wrap: wrap;
+    width: 266px;
+    height: 119px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.dropdown-expanded-rooms__rooms,
+.dropdown-expanded-rooms__beds,
+.dropdown-expanded-rooms__bathroom{
+    width: 251px;
+    height: 30px;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
-}
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
 
-//кнопки
-.quantity_inner {
     box-sizing: border-box;
-    display: inline-block;  
-}    
-
-.bt_minus,
-.bt_plus {
-    width: 30px;
-    height: 30px;
-    background: none;
-    color: #c7c7d0;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    margin-top: 7px;
     
-    
-    border: none;
-
 }
-.quantity{
-    
-width: 92px;
-height: 15px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 12px;
-line-height: 15px;
-text-align: center;
-text-transform: uppercase;
-color: #1F2041;
-border: none;
-background: none;
-}
-
 

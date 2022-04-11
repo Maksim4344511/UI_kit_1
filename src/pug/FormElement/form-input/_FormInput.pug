@@ -1,3 +1,5 @@
+include ../expand_more/_expand_more.pug
+
 .form-input.form-input-default 
     .form-input__title 
         .form-input__type Text Field
@@ -16,13 +18,13 @@
     .form-input__title 
         .form-input__type Dropdown
     .form-input__input-field
-        select.form-input__dropdown-btn         
-            option Сколько гостей
+        input.form-input__dropdown-btn(type = "text" value = "Сколько гостей" disabled)        
+        +expand_more
 
 .form-input.form-input-masked-text-field
     .form-input__title 
         .form-input__type masked text field
     .form-input__input-field
-        input.form-input__unselected-input(type="masked" placeholder= 'ДД.ММ.ГГГГ') 
+        input.form-input__unselected-input(type="text" placeholder= 'ДД.ММ.ГГГГ') 
 
   

@@ -22,7 +22,10 @@ const paths = globule.find(["src/pug/pages/**/*.pug"]);
 
 module.exports = {
     mode: mode,
-
+    entry: {
+        scripts: './src/index.js',
+        
+    },
     output: {
         filename: '[name].[contenthash].js',
         assetModuleFilename: "assets/[hash][ext][query]",

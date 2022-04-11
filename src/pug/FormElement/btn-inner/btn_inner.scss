@@ -1,0 +1,33 @@
+//кнопки
+.quantity_inner {
+    display: flex;
+    justify-content: space-between;
+    width: 92px;
+    height: 30px;  
+}    
+.bt_minus,
+.bt_plus {
+    
+    background: none;
+    color: #c7c7d0;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+}
+
+.quantity{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1F2041;
+    border: none;
+    background: none;
+}
+
+
+
+

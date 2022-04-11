@@ -1,0 +1,121 @@
+.dropdown-expanded-guests-1{
+    position: absolute;
+    width: 320px;
+    height: 221.56px;
+    left: 587px;
+    top: 876px;
+    filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.05));;
+}
+.dropdown-expanded-guests-2{
+    position: absolute;
+    width: 320px;
+    height: 221.56px;
+    left: 979px;
+    top: 876px;
+    filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.05));
+}
+
+
+
+.dropdown-expanded-guests__title{
+    width: 320px; 
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dropdown-expanded-guests__type{
+    width: 81px;
+    height: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+
+.dropdown-expanded-guests__input-field{
+    width: 320px;
+    height: 44px;
+    background: #FFFFFF;
+    
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.dropdown-expanded-guests__dropdown-btn {
+    width: 320px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+}  
+
+//выпадающий список
+.dropdown-expanded-guests__choice {
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+    height: 159px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.dropdown-expanded-guests__adults,
+.dropdown-expanded-guests__children,
+.dropdown-expanded-guests__babies{
+    width: 305px;
+    height: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    margin-top: 7px;
+}
+
+.dropdown-expanded-guests__button{
+    width: 300px;
+    height: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.dropdown-expanded-guests__button-apply {
+    width: 84px;
+    height: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+}
+.dropdown-expanded-guests__button-clear {
+    width: 84px;
+    height: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+}
