@@ -1,2 +1,15 @@
-input#happy.custom-checkbox(type='checkbox' name='happy' value='yes')
-label(for='happy') Happy
+
+
+.checkbox-closed
+    .checkbox-closed__btn
+        +expand_more_closed
+        button.checkbox-closed__title(onclick='mFunction()') expandable checkbox list
+            #myDropdown.checkbox-closed__expandable  
+                input#test(type='checkbox').checkbox-closed__input
+                label(for='test').checkbox-closed__label test
+               
+            
+
+//-изменить, после того, как научусь правильно js подключать
+script
+    include checkbox-closed.js

@@ -1,18 +1,13 @@
-.checkbox-closed{
+.rich-checkbox-buttons {
     position: absolute;
     width: 266px;
-    height: 44px;
-    left: 141px;
-    top: 1182px;}
-
-.checkbox-closed__btn{
-    width: 266px;
-    height: 44px;
-    cursor: pointer;
+    height: 145px;
+    left: 587px;
+    top: 1196px;
 }
 
-button.checkbox-closed__title{
-    width: 266px;
+.rich-checkbox-buttons__title{
+    width: 222px;
     height: 15px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -26,32 +21,33 @@ button.checkbox-closed__title{
     text-align: left;
 }
 
-.checkbox-closed__expandable{
+.rich-checkbox-buttons__checkbox{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 17px;
-    display: none;
-}
-.show {
-    display: block;
 }
 
-.checkbox-closed__input{
+.rich-checkbox-buttons__input{
     display: none;
 }
-.checkbox-closed__label{
-    width: 400px;
+.rich-checkbox-buttons__label{
+    width: 222px;
     color: rgba(31, 32, 65, 0.5);;
     line-height: 18px;
     display: flex;
+    
     vertical-align: middle;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 222;
+    font-size: 14px;
+    text-transform: none;
 }
 
-
-.checkbox-closed__label:before {
+.rich-checkbox-buttons__label:before {
     box-sizing: border-box;
     content: " ";
     width: 20px;
@@ -64,10 +60,9 @@ button.checkbox-closed__title{
     margin-bottom: 10px;
 }
 
-.checkbox-closed__input:checked + .checkbox-closed__label::before{
+.rich-checkbox-buttons__input:checked + .rich-checkbox-buttons__label::before{
     border-color: #BC9CFF;
     content:  url("/src/img/Vector.jpg");
     padding-left: 4px;
     padding-bottom: 0px;
 }
-
