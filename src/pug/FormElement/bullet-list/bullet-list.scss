@@ -1,0 +1,34 @@
+.bullet-list{
+    position: absolute;
+    width: 292px;
+    height: 147px;
+    left: 979px;
+    top: 1196px;
+}
+.bullet-list__title {
+    width: 79px;
+    height: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+    margin-bottom:16px;
+}
+.bullet-list__list{
+    list-style-image: url('/src/img/Ellipse.svg');
+    width: 271.14px;
+    height: 116px;
+}
+
+.bullet-list__point{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    padding-bottom: 10px;
+}

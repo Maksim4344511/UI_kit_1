@@ -5,18 +5,29 @@ html(lang='en')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     title Document
-  body.ColorsType 
+  body.ColorsType
+    include ../FormElement/expand_more/_expand_more.pug
+    include ../FormElement/btn-inner/_btn_inner.pug 
     include ../colorsType/_logo
-    include ../FormElement/form-input/_FormInput
-    include ../FormElement/form-input-date/_FormInputDate
-    include ../FormElement/subscript/_SubscriptionTextField.pug
-    include ../FormElement/dropdown/_Dropdown.pug
-    include ../FormElement/dropdown-rooms/_Dropdown_rooms.pug
-    include ../FormElement/dropdown-guests/_dropdown_guests.pug
-    
+    include ../FormElement/dropdown-input/form-input/_FormInput
+    include ../FormElement/dropdown-input/form-input-date/_FormInputDate
+    include ../FormElement/dropdown-input/subscript/_SubscriptionTextField.pug
+    include ../FormElement/dropdown-input/dropdown/_Dropdown.pug
+    include ../FormElement/dropdown-input/dropdown-rooms/_Dropdown_rooms.pug
+    include ../FormElement/dropdown-input/dropdown-guests/_dropdown_guests.pug
+   
     
     
     include ../FormElement/checkbox/checkbox-closed/checkbox-closed.pug
     include ../FormElement/checkbox/checkbox-open/checkbox-open.pug
     include ../FormElement/checkbox/checkbox-buttons/checkbox-buttons.pug
     include ../FormElement/checkbox/rich-checkbox-buttons/rich-checkbox-buttons.pug
+    include ../FormElement/checkbox/radio-buttons/radio-buttons.pug
+    include ../FormElement/checkbox/toggle/toggle.pug
+    
+    
+    
+    
+    include ../FormElement/bullet-list/bullet-list.pug
+
+

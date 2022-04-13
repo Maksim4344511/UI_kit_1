@@ -3,15 +3,14 @@
 @use '../styles/colorsType/colors.scss';
 @use '../styles/colorsType/logo.scss';
 @use '../styles/colorsType/type.scss';
-@use '../pug/FormElement/form-input/formInput.scss';
-@use '../pug/FormElement/form-input-date/formInputDate.scss';
-@use '../pug/FormElement/subscript/subscriptionTextField.scss';
-@use '../pug/FormElement/dropdown/Dropdown.scss';
-@use '../pug/FormElement/dropdown-rooms/Dropdown_rooms.scss';
-@use '../styles/FormElement/test.scss';
+@use '../pug/FormElement/dropdown-input/form-input/formInput.scss';
+@use '../pug/FormElement/dropdown-input/form-input-date/formInputDate.scss';
+@use '../pug/FormElement/dropdown-input/subscript/subscriptionTextField.scss';
+@use '../pug/FormElement/dropdown-input/dropdown/Dropdown.scss';
+@use '../pug/FormElement/dropdown-input/dropdown-rooms/Dropdown_rooms.scss';
 @use '../pug/FormElement/expand_more/expand.scss';
 @use '../pug/FormElement/btn-inner/btn_inner.scss';
-@use '../pug/FormElement/dropdown-guests/dropdown_guests.scss';
+@use '../pug/FormElement/dropdown-input/dropdown-guests/dropdown_guests.scss';
 
 
 
@@ -19,7 +18,14 @@
 @use '../pug/FormElement/checkbox/checkbox-open/checkbox-open.scss';
 @use '../pug/FormElement/checkbox/checkbox-buttons/checkbox-buttons.scss';
 @use '../pug/FormElement/checkbox/rich-checkbox-buttons/rich-checkbox-buttons.scss';
+@use '../pug/FormElement/checkbox/radio-buttons/radio-buttons.scss';
+@use '../pug/FormElement/checkbox/toggle/toggle.scss';
 
 
 
+@use '../pug/FormElement/bullet-list/bullet-list.scss';
+
+
+
+@use '../styles/FormElement/test.scss';
 @import "~bootstrap/scss/bootstrap";

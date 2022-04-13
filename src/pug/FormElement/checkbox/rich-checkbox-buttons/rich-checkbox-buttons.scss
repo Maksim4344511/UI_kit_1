@@ -7,8 +7,6 @@
 }
 
 .rich-checkbox-buttons__title{
-    width: 222px;
-    height: 15px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -16,9 +14,6 @@
     line-height: 15px;
     text-transform: uppercase;
     color: #1F2041;
-    border: none;
-    background: none;
-    text-align: left;
 }
 
 .rich-checkbox-buttons__checkbox{
@@ -27,24 +22,20 @@
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 17px;
+    margin-top: 16px;
 }
 
 .rich-checkbox-buttons__input{
     display: none;
 }
 .rich-checkbox-buttons__label{
-    width: 222px;
     color: rgba(31, 32, 65, 0.5);;
-    line-height: 18px;
-    display: flex;
-    
-    vertical-align: middle;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 222;
-    font-size: 14px;
-    text-transform: none;
+    display: flex;    
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 233px;
+    height: 52px;
+    margin-bottom: 10px;
 }
 
 .rich-checkbox-buttons__label:before {
@@ -57,12 +48,35 @@
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 4px;
     margin-right: 9px;
-    margin-bottom: 10px;
+    
 }
 
 .rich-checkbox-buttons__input:checked + .rich-checkbox-buttons__label::before{
     border-color: #BC9CFF;
-    content:  url("/src/img/Vector.jpg");
+    content:  url("/src/img/Vector.svg");
     padding-left: 4px;
-    padding-bottom: 0px;
+    padding-top: 2px;
+}
+
+.rich-checkbox-buttons__label-title{
+    width: 200px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    
+    color: rgba(31, 32, 65, 0.75);
+    text-transform: none;
+}
+
+
+.rich-checkbox-buttons__label-decryption{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    
+    color: rgba(31, 32, 65, 0.5);
+    padding-left: 31px;
+    text-transform: none;
 }

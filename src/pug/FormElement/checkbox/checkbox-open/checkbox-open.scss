@@ -61,6 +61,7 @@ button.checkbox-open__title{
     min-width: 20px;
     height: 20px;
     display: block;
+    
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 4px;
     margin-right: 9px;
@@ -69,7 +70,7 @@ button.checkbox-open__title{
 
 .checkbox-open__input:checked + .checkbox-open__label::before{
     border-color: #BC9CFF;
-    content:  url("/src/img/Vector.jpg");
+    content:  url("/src/img/Vector.svg");
     padding-left: 4px;
     padding-bottom: 0px;
 }

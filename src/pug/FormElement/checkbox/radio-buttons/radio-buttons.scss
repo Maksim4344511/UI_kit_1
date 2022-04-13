@@ -1,0 +1,68 @@
+.radio-buttons{
+    position: absolute;
+    width: 220.74px;
+    height: 55px;
+    left: 587px;
+    top: 313px;
+}
+
+.radio-buttons__title{
+    width: 107px;
+    height: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+    margin-bottom: 16px;
+}
+
+.radio-buttons__form{
+    display: flex; 
+}
+
+.radio-buttons__input{
+    display: none;
+    
+}
+
+.radio-buttons__label{
+    display: flex;
+    justify-content: space-between;
+    height: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.5);
+    cursor: pointer;
+    padding-right: 20px; 
+}
+
+.radio-buttons__label:before{
+    box-sizing: border-box;
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 10px;
+    margin-right: 10px;
+    
+}
+
+.radio-buttons__input:checked + .radio-buttons__label:before{
+    border-color: #BC9CFF;
+    content: url("/src/img/Rectangle2.1.svg");
+    display: inline-block;
+    text-align: center;
+    
+}
+
+
+.radio-buttons__input:checked + .radio-buttons__label{
+    color: rgba(31, 32, 65, 0.75);
+}
