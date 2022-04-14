@@ -1,0 +1,14 @@
+.titlebox {
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.titlebox__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}

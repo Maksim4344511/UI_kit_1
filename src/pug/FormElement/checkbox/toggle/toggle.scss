@@ -1,0 +1,72 @@
+.toggle {
+position: absolute;
+width: 260px;
+height: 89px;
+left: 587px;
+top: 404.56px;
+}
+
+.toggle__input + .toggle__label {
+    cursor: pointer;
+}
+.toggle__input:not(checked) {
+    position: absolute;
+    opacity: 0;
+    
+}
+  .toggle__input:not(checked) + .toggle__label {
+    position: relative; /* будем позиционировать псевдочекбокс относительно label */
+    padding: 0 0 0 50px; /* оставляем слева от label место под псевдочекбокс */
+
+  }
+  /* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.toggle__input:not(checked) + .toggle__label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+  /* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+.toggle__input:not(checked) + .toggle__label:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    background: rgba(31, 32, 65, 0.25);
+    transition: all .2s; 
+       /* анимация, чтобы чекбокс переключался плавно */
+  }
+  /* Меняем фон чекбокса, когда он включен. */
+  .toggle__input:checked + .toggle__label:before {
+    border:1px solid #BC9CFF;
+  }
+  /* Сдвигаем переключатель чекбокса, когда он включен. */
+  .toggle__input:checked +.toggle__label:after {
+    left: 24px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+   
+  }
+  /* Показываем получение фокуса. */
+  .toggle__input:focus + .toggle__label:before {
+    box-shadow: none;
+  }
+
+  /*Стиль текста*/
+  .toggle__input:not(checked) + .toggle__label{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    padding-bottom: 10px;
+}

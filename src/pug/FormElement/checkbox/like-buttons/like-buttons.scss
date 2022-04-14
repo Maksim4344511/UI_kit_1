@@ -1,0 +1,79 @@
+.like-buttons {
+    position: absolute;
+    width: 89.72px;
+    height: 51px;
+    left: 587px;
+    top: 534px;
+}
+.like-buttons__form{
+    display: flex;
+}
+
+.like-buttons__input + .like-buttons__label {
+    cursor: pointer;
+}
+.like-buttons__input:not(checked) {
+    display: none;
+        
+}
+  .like-buttons__input:not(checked) + .like-buttons__label {
+    position: relative; /* будем позиционировать псевдочекбокс относительно label */
+    padding: 0 0 0 50px; /* оставляем слева от label место под псевдочекбокс */
+    
+
+
+  }
+  /* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.like-buttons__input:not(checked) + .like-buttons__label:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 40px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+  /* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+.like-buttons__input:not(checked) + .like-buttons__label:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    content: url("/src/img/favorite_border.svg");
+    
+    
+   
+       /* анимация, чтобы чекбокс переключался плавно */
+  }
+  /* Меняем фон чекбокса, когда он включен. */
+  .like-buttons__input:checked + .like-buttons__label:before {
+    border:1px solid #BC9CFF;
+  }
+  /* Меняем цвет сердца. */
+  .like-buttons__input:checked +.like-buttons__label:after {
+    content: url("/src/img/favorite.svg");
+   
+  }
+  /* Показываем получение фокуса, если нужно на потом */
+  .like-buttons__input:focus + .like-buttons__label:before {
+    box-shadow: none;
+  }
+
+  /*Стиль текста*/
+  .like-buttons__input:not(checked) + .like-buttons__label{
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+   }
+.like-buttons__input:checked + .like-buttons__label{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    color: #BC9CFF;
+}

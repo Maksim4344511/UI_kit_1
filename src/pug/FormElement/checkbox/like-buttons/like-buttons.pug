@@ -1,0 +1,9 @@
+mixin like-buttons(id, text, name, value)
+    input.like-buttons__input(type='checkbox' id= id name= name, value= value)
+    label(for= id).like-buttons__label= text
+
+.like-buttons
+    +titlebox('like button')
+    .like-buttons__form
+        +like-buttons('like1', '2', like, 2)
+        +like-buttons('like2', '12', like2, 12)

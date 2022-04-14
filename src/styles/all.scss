@@ -1,5 +1,6 @@
 
 @use 'main';
+@use 'reset.scss';
 @use '../styles/colorsType/colors.scss';
 @use '../styles/colorsType/logo.scss';
 @use '../styles/colorsType/type.scss';
@@ -10,6 +11,7 @@
 @use '../pug/FormElement/dropdown-input/dropdown-rooms/Dropdown_rooms.scss';
 @use '../pug/FormElement/expand_more/expand.scss';
 @use '../pug/FormElement/btn-inner/btn_inner.scss';
+@use '../pug/FormElement/titlebox/titlebox.scss';
 @use '../pug/FormElement/dropdown-input/dropdown-guests/dropdown_guests.scss';
 
 
@@ -20,6 +22,8 @@
 @use '../pug/FormElement/checkbox/rich-checkbox-buttons/rich-checkbox-buttons.scss';
 @use '../pug/FormElement/checkbox/radio-buttons/radio-buttons.scss';
 @use '../pug/FormElement/checkbox/toggle/toggle.scss';
+@use '../pug/FormElement/checkbox/like-buttons/like-buttons.scss';
+
 
 
 
