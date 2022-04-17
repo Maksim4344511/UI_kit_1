@@ -1,6 +1,6 @@
 
 
-mixin dropdown-expanded-guests        
+mixin dropdown-expanded-guests(btn1, btn2)      
     .dropdown-expanded-guests__title
         .dropdown-expanded-guests__type dropdown
     .dropdown-expanded-guests__input-field
@@ -17,15 +17,14 @@ mixin dropdown-expanded-guests
             div младенцы
             +quantity_inner
         .dropdown-expanded-guests__button   
-            .dropdown-expanded-guests__button-clear(type = "button" value = "Очистить") Очистить    
-            .dropdown-expanded-guests__button-apply(type = "button" value = "Применить") Применить
+            .dropdown-expanded-guests__button-clear(type = "button" value = "Очистить")= btn1   
+            .dropdown-expanded-guests__button-apply(type = "button" value = "Применить")= btn2
 
 
 
 .dropdown-expanded-guests-1
-    +dropdown-expanded-guests
-    
+    +dropdown-expanded-guests('', 'Применить')
 
-//-разобраться как из миксина убирать элементы js
+
 .dropdown-expanded-guests-2
-    +dropdown-expanded-guests    
+    +dropdown-expanded-guests('Отчистить', 'Применить')    

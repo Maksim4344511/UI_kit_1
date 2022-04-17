@@ -1,0 +1,17 @@
+mixin rate-buttons-stars(stars, emty)
+    .rate-buttons-stars
+        -var i = 1
+        while i <= stars
+            .rate-buttons-stars__object= i++
+        -var i = 1
+        while i <= emty
+            .rate-buttons-empty__object= i++
+
+.rate-buttons-title
+    +titlebox('rate button')
+
+.rate-buttons-1
+    +rate-buttons-stars(4, 1)
+    
+.rate-buttons-2
+    +rate-buttons-stars(5, 0)

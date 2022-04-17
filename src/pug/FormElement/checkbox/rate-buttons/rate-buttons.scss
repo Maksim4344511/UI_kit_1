@@ -1,0 +1,44 @@
+.rate-buttons-title{
+    position: absolute;
+width: 90px;
+height: 15px;
+left: 587px;
+top: 625px;
+}
+
+.rate-buttons-1{
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 587px;
+    top: 656px;
+
+}
+.rate-buttons-2{
+    position: absolute;
+    width: 119.74px;
+    height: 24px;
+    left: 727px;
+    top: 656px;
+}
+
+.rate-buttons-stars{
+    display: flex;
+}
+.rate-buttons-empty{
+    display: flex;
+}
+
+.rate-buttons-stars__object{
+    content: url("/src/img/star.svg");
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+}
+
+.rate-buttons-empty__object{
+    content: url("/src/img/star_border.svg");
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+}

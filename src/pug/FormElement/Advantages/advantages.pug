@@ -1,0 +1,13 @@
+mixin advantages(img, title, description)    
+    .advantages
+        .div(class=img)
+        .advantages__text    
+            .advantages__title= title
+            .advantages__description= description
+
+
+.comfort 
+    +advantages('insert_emoticon', "Комфорт", 'Шумопоглощающие стены')
+
+.convenience
+    +advantages('location_city', "Удобство", 'Окно в каждой из спален')
