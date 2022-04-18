@@ -1,8 +1,21 @@
 mixin reviews(review_object)
     .reviews
         .reviews__author
-            .reviews__author-img
-            .reviews__author-123123123123
-                .reviews__author-name
-                .reviews__author-date
+            div(class=review_object.img)
+            .reviews__author-data
+                .reviews__author-name= review_object.name
+                .reviews__author-date= review_object.date
+        .reviews__content
+            +like-buttons('like3', review_object.like, like2, rt)
+            .reviews__text= review_object.text         
 
+
+//- не получается прописать путь к картинге через паг тег img, делаю через див и прописываю бэкграунт в свойствах.
+.review-Murad
+    +reviews({
+        img: 'reviews__author-img',
+        name: 'Мурад Сарафанов',
+        date: '5 дней назад',
+        text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.',
+        like: "12"
+    })

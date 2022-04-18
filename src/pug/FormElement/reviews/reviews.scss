@@ -1,0 +1,71 @@
+.review-Murad{
+    position: absolute;
+    width: 711px;
+    height: 133px;
+    left: 587px;
+    top: 1573px;
+}
+
+.reviews__author{
+    display: flex;
+}
+.reviews__author-img{
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    background: url("/src/img/image.jpg");
+    background-position: 50% 27%;
+    background-repeat: no-repeat;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.1));
+    border-radius: 32px;
+}
+
+.reviews__author-data{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.reviews__author-name{  
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    
+}
+
+.reviews__author-date{  
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+   
+}
+
+.reviews__content{
+    display: flex;
+}
+
+.reviews__text{
+    padding-left: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.reviews__like {
+    position: relative;
+    width: 39.72px;
+    height: 20px;
+}

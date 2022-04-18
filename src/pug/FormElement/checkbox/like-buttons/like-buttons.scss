@@ -39,7 +39,7 @@
 .like-buttons__input:not(checked) + .like-buttons__label:after {
     content: '';
     position: absolute;
-    top: 0px;
+    top: -2px;
     left: 5px;
     width: 10px;
     height: 10px;
