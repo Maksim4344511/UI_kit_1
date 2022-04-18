@@ -1,21 +1,47 @@
 import $ from "jquery";
 
-$(".polzunok-3").slider({
-    min: 0,
-    max: 1000,
-    value: 600,
-    range: "min",
-    animate: "fast",
-    slide : function(event, ui) {    
-        var opt = $(".polzunok-3").data().uiSlider.options;
-        if ((ui.value - opt.min) > (opt.max - opt.min)/2) {
-            $(".polzunok-3 b").addClass("polzunok-text-left-3").removeClass("polzunok-text-right-3");    
-            } else {
-            $(".polzunok-3 b").addClass("polzunok-text-right-3").removeClass("polzunok-text-left-3");    
+$(function ($){
+    $(".polzunok-5").slider({
+        min: 0,
+        max: 20000,
+        values: [5000, 10000],
+        range: true,
+        animate: "fast",
+        slide : function(event, ui) {    
+            $(".polzunok-input-5-left").val(ui.values[ 0 ].toLocaleString('ru') + " ₽");   
+            $(".polzunok-input-5-right").val(ui.values[ 1 ].toLocaleString('ru') + " ₽");  
+        }	
+    });
+    $(".polzunok-input-5-left").val($(".polzunok-5").slider("values", 0).toLocaleString('ru') + " ₽");
+    $(".polzunok-input-5-right").val($(".polzunok-5").slider("values", 1).toLocaleString('ru') + " ₽");
+    $(document).focusout(function() {
+        var input_left = $(".polzunok-input-5-left").val().replace(/[^0-9]/g, ''),	
+        opt_left = $(".polzunok-5").slider("option", "min"),
+        where_right = $(".polzunok-5").slider("values", 1),
+        input_right = $(".polzunok-input-5-right").val().replace(/[^0-9]/g, ''),	
+        opt_right = $(".polzunok-5").slider("option", "max"),
+        where_left = $(".polzunok-5").slider("values", 0); 
+        if (input_left > where_right) { 
+            input_left = where_right; 
         }
-        $(".polzunok-3 span").text(ui.value); 
-    }
-});
-$(".polzunok-3 b").addClass("polzunok-text-left-3");    
-$(".polzunok-3").before("<div class='polzunok-bg-3'></div>");
-$(".polzunok-3 span").text($(".polzunok-3").slider("value"));  
+        if (input_left < opt_left) {
+            input_left = opt_left; 
+        }
+        if (input_left == "") {
+            input_left = 0;	
+        }		
+        if (input_right < where_left) { 
+            input_right = where_left; 
+        }
+        if (input_right > opt_right) {
+            input_right = opt_right; 
+        }
+        if (input_right == "") {
+            input_right = 0;	
+        }	
+        $(".polzunok-5").slider( "values", [ input_left, input_right ] );	
+	    $(".polzunok-input-5-left").val($(".polzunok-5").slider("values", 0).toLocaleString('ru') + " ₽");
+	    $(".polzunok-input-5-right").val($(".polzunok-5").slider("values", 1).toLocaleString('ru')+ " ₽");		
+        
+    });
+ }) 

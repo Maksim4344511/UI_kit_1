@@ -8,5 +8,6 @@ import './test';
 
 
 import $ from "jquery";
+import './js_widgets/jquery-ui-1.13.1.custom/jquery-ui.js';
 import 'bootstrap';
 
