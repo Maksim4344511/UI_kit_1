@@ -8,11 +8,11 @@ $(function ($){
         range: true,
         animate: "fast",
         slide : function(event, ui) {    
-            $(".polzunok-input-5-left").val(ui.values[ 0 ].toLocaleString('ru') + " ₽");   
+            $(".polzunok-input-5-left").val(ui.values[ 0 ].toLocaleString('ru') + " ₽" + "  -  ");   
             $(".polzunok-input-5-right").val(ui.values[ 1 ].toLocaleString('ru') + " ₽");  
         }	
     });
-    $(".polzunok-input-5-left").val($(".polzunok-5").slider("values", 0).toLocaleString('ru') + " ₽");
+    $(".polzunok-input-5-left").val($(".polzunok-5").slider("values", 0).toLocaleString('ru') + " ₽" + "  -  ");
     $(".polzunok-input-5-right").val($(".polzunok-5").slider("values", 1).toLocaleString('ru') + " ₽");
     $(document).focusout(function() {
         var input_left = $(".polzunok-input-5-left").val().replace(/[^0-9]/g, ''),	
@@ -40,7 +40,7 @@ $(function ($){
             input_right = 0;	
         }	
         $(".polzunok-5").slider( "values", [ input_left, input_right ] );	
-	    $(".polzunok-input-5-left").val($(".polzunok-5").slider("values", 0).toLocaleString('ru') + " ₽");
+	    $(".polzunok-input-5-left").val($(".polzunok-5").slider("values", 0).toLocaleString('ru') + " ₽" + "  -  ");
 	    $(".polzunok-input-5-right").val($(".polzunok-5").slider("values", 1).toLocaleString('ru')+ " ₽");		
         
     });

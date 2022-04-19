@@ -1,9 +1,17 @@
-.range-slider{
+.range-slider-exemle{
     position: absolute;
-    width: 466px;
+    width: 266px;
     height: 47.44px;
     left: 979px;
     top: 143px;
+}
+
+.range-slider___name-value{
+    width: 266px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
 }
 
 .polzunok-container-5 * {
@@ -24,6 +32,7 @@
     border-radius: 3px;
     width: 266px;
     height: 6px;
+    margin-top: 18px;
 }
 .polzunok-container-5 .ui-slider .ui-slider-handle {
     position: absolute;
@@ -39,7 +48,7 @@
 
 .polzunok-input-5-left,
 .polzunok-input-5-right {
-    width: 102px;
+    
     height: 15px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -50,17 +59,22 @@
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5);
     border: none;
+    
+}
+.polzunok-input-5-left{
+    width: 54px;
+}
+.polzunok-input-5-right{
+    width: 42px;
+}
 
-}
 .range-slider__input{
-    
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-.polzunok-input-5-left {
-    
-}
-.polzunok-input-5-right {
-    
-}
+
 .polzunok-container-5 .ui-slider .ui-slider-range {
     position: absolute;
     z-index: 1;

@@ -1,0 +1,42 @@
+.button-payment-exemple{
+    position: absolute;
+    width: 320px;
+    height: 44px;
+    left: 979px;
+    top: 456px;
+}
+
+.button-payment__btn{
+    width: 320px;
+    height: 44px;    
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.button-payment-arrow-forward {
+    position: absolute;
+    top: 0px;
+    left: 276px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center; /*Центрирование по горизонтали*/
+    align-items: center;  
+}
+.button-payment__btn:hover{
+    opacity: 0.5;
+}
