@@ -2,6 +2,7 @@ import './styles/index.scss';
 import './pug/FormElement/btn-inner/btn_inner';
 import './pug/FormElement/checkbox/checkbox-closed/checkbox-closed';
 import './pug/FormElement/range-slider/range-slider';
+import './pug/FormElement/pagination/pagination';
 import './test';
 
 

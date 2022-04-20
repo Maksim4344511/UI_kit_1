@@ -29,7 +29,7 @@
 @use '../pug/FormElement/range-slider/range-slider.scss';
 @use '../pug/FormElement/buttons/buttons.scss';
 @use '../pug/FormElement/button-payment/button-payment.scss';
-
+@use '../pug/FormElement/pagination/pagination.scss';
 
 
 
@@ -37,7 +37,4 @@
 
 @use '../pug/FormElement/bullet-list/bullet-list.scss';
 
-
-
-@use '../styles/FormElement/test.scss';
 @import "~bootstrap/scss/bootstrap";

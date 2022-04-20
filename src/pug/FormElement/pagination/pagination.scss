@@ -1,0 +1,93 @@
+.pagination-example{
+    position: absolute;
+width: 241px;
+height: 106px;
+left: 979px;
+top: 540px;
+}
+
+.pagination{
+    display: flex;
+    flex-direction: column;
+    width: 241px;
+    height: 75px;
+}
+
+.pagination__panel{
+    display: flex;
+    width: 241px;
+    height: 40.44px;
+    margin-top: 10px;  
+}
+
+.pagination__figure1{
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;    
+}
+
+.pagination__figure2{
+    width: 40px;
+    height: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.pagination__figure3{    
+width: 40px;
+height: 40px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: rgba(31, 32, 65, 0.5);
+}
+
+.pagination__figure4{   
+    width: 40px; 
+    height: 40px;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 22px;
+
+}
+.pagination__arrow{
+    width: 40px; 
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination__text{
+    
+width: 229px;
+height: 24px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+color: rgba(31, 32, 65, 0.75);
+margin-top: 10px;
+}

@@ -1,27 +1,25 @@
-.form-input.form-input-default 
-    .form-input__title 
-        .form-input__type Text Field
-        .form-input__value Default
-    .form-input__input-field
-        input.form-input__unselected-input(type="email" placeholder= 'Email')
+
+.form-input-default 
+    .form-input
+        +titlebox('Text Field', 'Default')        
+        .form-input__input-field
+            input.form-input__unselected-input(type="email" placeholder= 'Email')
       
-.form-input.form-input-focus 
-    .form-input__title 
-        .form-input__type Text Field
-        .form-input__value HOVER/FOCUS
+.form-input.form-input-focus
+    +titlebox('Text Field', 'HOVER/FOCUS')
+    
     .form-input__input-field
         input.form-input__focus-input(type="text" placeholder='This is pretty awesome')    
 
 .form-input.form-input-dropdown 
-    .form-input__title 
-        .form-input__type Dropdown
+    +titlebox('Dropdown')
+    
     .form-input__input-field
         input.form-input__dropdown-btn(type = "text" value = "Сколько гостей" disabled)        
         +expand_more
 
 .form-input.form-input-masked-text-field
-    .form-input__title 
-        .form-input__type masked text field
+    +titlebox('masked text field')
     .form-input__input-field
         input.form-input__unselected-input(type="text" placeholder= 'ДД.ММ.ГГГГ') 
 
