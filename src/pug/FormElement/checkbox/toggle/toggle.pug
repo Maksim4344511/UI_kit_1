@@ -1,8 +1,8 @@
-mixin toggle(id, text, name, value)
+mixin toggle(id, text, name, value)    
     input.toggle__input(type='checkbox' id= id name= name, value= value)
     label(for= id).toggle__label= text
 
-.toggle
-    +titlebox('Toggle') 
+.toggle-example
+    .toggle__title Toggle
     +toggle('toggleCheckbox1', 'Получать спецпредложения')
     +toggle('toggleCheckbox2', 'Получать спецпредложения')

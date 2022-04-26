@@ -1,12 +1,13 @@
-.checkbox-buttons
-    +titlebox('Checkbox Buttons')   
+mixin checkbox-buttons
     #myDropdown.checkbox-buttons__checkbox
         input#btn1(type='checkbox').checkbox-buttons__input
         label(for='btn1').checkbox-buttons__label Можно курить
-        input#btn2(type='checkbox').checkbox-buttons__input
+        input#btn2(type='checkbox' checked="checked").checkbox-buttons__input
         label(for='btn2').checkbox-buttons__label Можно с питомцами
-        input#btn3(type='checkbox').checkbox-buttons__input
+        input#btn3(type='checkbox' checked="checked").checkbox-buttons__input
         label(for='btn3').checkbox-buttons__label Можно пригласить гостей (до 10 человек)
          
-
+.checkbox-buttons-example
+    +titlebox('Checkbox Buttons') 
+    +checkbox-buttons
 

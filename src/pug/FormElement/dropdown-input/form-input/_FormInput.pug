@@ -1,26 +1,30 @@
-
-.form-input-default 
+mixin form-input(object)
     .form-input
-        +titlebox('Text Field', 'Default')        
-        .form-input__input-field
-            input.form-input__unselected-input(type="email" placeholder= 'Email')
+        input.form-input__input(type=object.type name= object.name value= object.value placeholder= object.placeholder id= object.id)
+
+.form-input-default
+    +titlebox('Text Field', 'Default')
+    +form-input({
+                    name: "Email",
+                    value: "",
+                    placeholder: "Email"
+                })                
+    
       
-.form-input.form-input-focus
-    +titlebox('Text Field', 'HOVER/FOCUS')
+.form-input-focus
+    +titlebox('Text Field', 'HOVER / FOCUS')
+    +form-input({
+                    name: "Text Field",
+                    value: "",
+                    placeholder: "This is pretty awesome"
+                })              
     
-    .form-input__input-field
-        input.form-input__focus-input(type="text" placeholder='This is pretty awesome')    
-
-.form-input.form-input-dropdown 
-    +titlebox('Dropdown')
-    
-    .form-input__input-field
-        input.form-input__dropdown-btn(type = "text" value = "Сколько гостей" disabled)        
-        +expand_more
-
-.form-input.form-input-masked-text-field
+.form-input-masked
     +titlebox('masked text field')
-    .form-input__input-field
-        input.form-input__unselected-input(type="text" placeholder= 'ДД.ММ.ГГГГ') 
-
+    +form-input({
+                    name: "masked",
+                    value: "",
+                    placeholder: "ДД.ММ.ГГГГ"
+                })              
+    
   

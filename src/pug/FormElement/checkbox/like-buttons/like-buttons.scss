@@ -1,10 +1,25 @@
 .like-buttons {
     position: absolute;
     width: 89.72px;
-    height: 51px;
+    height: 54px;
     left: 587px;
     top: 534px;
 }
+
+.like-buttons__title {
+  
+    width: 85px;
+    height: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+
+}
+
 .like-buttons__form{
     display: flex;
 }

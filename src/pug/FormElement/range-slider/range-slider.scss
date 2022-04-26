@@ -4,6 +4,9 @@
     height: 47.44px;
     left: 979px;
     top: 143px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .range-slider___name-value{
@@ -47,15 +50,13 @@
 }
 
 .polzunok-input-5-left,
-.polzunok-input-5-right {
-    
+.polzunok-input-5-right {    
     height: 15px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 15px;
-    text-align: right;
+    line-height: 15px;    
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5);
     border: none;
@@ -65,7 +66,7 @@
     width: 54px;
 }
 .polzunok-input-5-right{
-    width: 42px;
+    width: 54px;
 }
 
 .range-slider__input{

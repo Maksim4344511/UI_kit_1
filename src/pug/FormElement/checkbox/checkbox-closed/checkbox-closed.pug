@@ -1,14 +1,13 @@
-
-
-.checkbox-closed
+mixin checkbox-closed(name)
     .checkbox-closed__btn
-        +expand_more_closed
-        button.checkbox-closed__title(onclick='mFunction()') expandable checkbox list
+        button.checkbox-closed__title(onclick='mFunction()')= name
             #myDropdown.checkbox-closed__expandable  
                 input#test(type='checkbox').checkbox-closed__input
                 label(for='test').checkbox-closed__label test
                
-            
+.checkbox-closed-example
+    +checkbox-closed('expandable checkbox list') 
+    +expand_more       
 
 //-изменить, после того, как научусь правильно js подключать
 script

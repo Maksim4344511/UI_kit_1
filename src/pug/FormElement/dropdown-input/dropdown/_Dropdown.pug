@@ -1,9 +1,27 @@
+mixin dropdown(name)
+    .dropdown
+        button.dropdown__btn= name
+    +expand_more_closed                 
+        //-Ширина авто, а как быть с высотой, для разных дропов, не понял
+        //-.dropdown__content        
+            .dropdown__choice
+                .div test
+                +quantity_inner
+            .dropdown__choice
+                .div test
+                +quantity_inner
+            .dropdown__choice
+                .div test
+                +quantity_inner
+            
+                
+
+.dropdown-example    
+    +titlebox('Dropdown')    
+    +dropdown('Сколько гостей')        
+   
+ 
 .dropdown-default-rooms
-    .dropdown-default-rooms__title
-        .dropdown-default-rooms__type dropdown
-        .dropdown-default-rooms__value Default
-    .dropdown-default-rooms__input-field
-        input.dropdown-default-rooms__dropdown-btn(type="text" placeholder= '2 спальни, 2 кровати...')       
-        +expand_more    
-    
+    +titlebox('Dropdown', 'Default')
+    +dropdown('2 спальни, 2 кровати...')        
     

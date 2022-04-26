@@ -1,4 +1,4 @@
-.rich-checkbox-buttons {
+.rich-checkbox-buttons-example {
     position: absolute;
     width: 266px;
     height: 145px;
@@ -22,7 +22,7 @@
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 16px;
+    margin-top: 18px;
 }
 
 .rich-checkbox-buttons__input{
@@ -33,7 +33,7 @@
     display: flex;    
     flex-wrap: wrap;
     align-items: flex-start;
-    width: 233px;
+    width: 260px;
     height: 52px;
     margin-bottom: 10px;
 }
@@ -59,24 +59,25 @@
 }
 
 .rich-checkbox-buttons__label-title{
-    width: 200px;
+    width: 203px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
-    
+    font-size: 14px;    
     color: rgba(31, 32, 65, 0.75);
     text-transform: none;
 }
 
 
 .rich-checkbox-buttons__label-decryption{
+    width: 260px;
+    height: 28px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    
+    font-size: 12px;    
     color: rgba(31, 32, 65, 0.5);
     padding-left: 31px;
     text-transform: none;
+
 }

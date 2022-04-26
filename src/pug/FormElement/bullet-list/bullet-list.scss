@@ -1,4 +1,4 @@
-.bullet-list{
+.bullet-list-example{
     position: absolute;
     width: 292px;
     height: 147px;
@@ -6,8 +6,7 @@
     top: 1196px;
 }
 .bullet-list__title {
-    width: 79px;
-    height: 15px;
+    width: 79px;    
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -15,18 +14,22 @@
     line-height: 15px;
     text-transform: uppercase;
     color: #1F2041;
-    margin-bottom:16px;
+    margin-bottom: 15px;
 }
 .bullet-list__list{
     list-style-image: url('/src/img/Ellipse.svg');
-    width: 271.14px;
+    list-style-type: none;
+    width: 252px;
     height: 116px;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
 }
 
 .bullet-list__point{
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 250;
     font-size: 14px;
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);

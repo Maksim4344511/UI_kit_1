@@ -9,11 +9,13 @@
     width: 266px;
     height: 44px;
     cursor: pointer;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 button.checkbox-open__title{
     width: 266px;
-    height: 15px;
+    height: 14px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;

@@ -1,16 +1,25 @@
 .buttons-exemple{
     position: absolute;
-    display:flex;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     width: 218px;
     height: 195px;
     left: 979px;
     top: 231px;
 }
-.span{
-    width: 80px;
+.buttons-exemple__title{  
+    width: 218px;
+    height: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
 }
+
 .buttons-container__btn-split{    
     width: 99px;
     height: 44px;
@@ -28,9 +37,7 @@
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #FFFFFF;  
-       
-     
+    color: #FFFFFF;     
 }
 
 .buttons-container__btn-split:disabled,
@@ -61,9 +68,9 @@
     line-height: 15px;
     text-transform: uppercase;
     color: #BC9CFF;
-    margin: 1px;
-     
+    margin: 1px;     
 }
+
 .buttons-container__border{
     width: 99px;
     height: 44px;
@@ -71,8 +78,7 @@
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }
 
-.buttons-container__btn-text{  
-     
+.buttons-container__btn-text{      
     background:  #FFFFFF;
     border: none;
     cursor: pointer;
@@ -87,11 +93,23 @@
     line-height: 15px;
     text-transform: uppercase;
     color: #BC9CFF;
-    padding-top: 10px;
-    padding-bottom: 10px
-   
+    padding-top: 15px;
+    padding-bottom: 10px;   
 }
-
+.buttons-exemple__conteiner1{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.buttons-exemple__conteiner2{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 .buttons-container__btn-text:disabled{
     color: rgba(31, 32, 65, 0.5);
 }

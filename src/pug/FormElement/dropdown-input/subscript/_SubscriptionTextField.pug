@@ -1,7 +1,9 @@
-.form-input-subscription-text-field
-    .form-input-subscription-text-field__type subscription text field
+mixin subscription-text-field
     .form-input-subscription-text-field__input-field
         input.form-input-subscription-text-field__input(type="text" placeholder= 'Email')
         .form-input-subscription-text-field__arrow_forward
             +arrow
    
+.form-input-subscription-text-field
+    +titlebox('subscription text field')
+    +subscription-text-field

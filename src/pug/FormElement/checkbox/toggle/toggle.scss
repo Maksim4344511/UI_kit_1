@@ -1,9 +1,23 @@
-.toggle {
-position: absolute;
-width: 260px;
-height: 89px;
-left: 587px;
-top: 404.56px;
+.toggle-example {
+    position: absolute;
+    width: 260px;
+    height: 89px;
+    left: 587px;
+    top: 404.56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.toggle__title {
+    width: 50px;
+    height:15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
 }
 
 .toggle__input + .toggle__label {
@@ -67,6 +81,5 @@ top: 404.56px;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
-    padding-bottom: 10px;
+    color: rgba(31, 32, 65, 0.75);    
 }

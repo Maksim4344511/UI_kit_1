@@ -1,24 +1,28 @@
-
-
-.dropdown-expanded-rooms    
-    .dropdown-expanded-rooms__title
-        .dropdown-expanded-rooms__type dropdown
-        .dropdown-expanded-rooms__value Default
-    .dropdown-expanded-rooms__input-field
-        +expand_more
-        input.dropdown-expanded-rooms__dropdown-btn(type = "text" value = "Сколько комнат" disabled)         
-        
-             
+mixin dropdown-rooms-content(object)
     .dropdown-expanded-rooms__choice      
         .dropdown-expanded-rooms__rooms
-            div спальни 
+            div= object.rooms
             +quantity_inner            
         .dropdown-expanded-rooms__beds
-            div кровати
+            div= object.beds
             +quantity_inner              
         .dropdown-expanded-rooms__bathroom
-            div ванные комнаты
+            div= object.bathroom
             +quantity_inner
+
+.dropdown-expanded-rooms    
+    +titlebox('Dropdown', 'expanded')
+    +dropdown('2 спальни, 2 кровати...')
+        
+    +dropdown-rooms-content({
+        rooms: 'спальни',
+        beds: 'кровати',
+        bathroom: 'ванные комнаты'
+    })    
+    
+        
+             
+    
                   
                 
 

@@ -1,37 +1,46 @@
-.form-input {
-    display: flex;
-    flex-direction: column;
-}
-.form-input__input-field {
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.form-input__input{  
+    cursor: pointer;
+    border: none;    
 }
 
-.form-input__unselected-input,
-.form-input__focus-input,
-.form-input__dropdown,
-.form-input__dropdown-btn{  
-   
+.form-input{
     cursor: pointer;
     width: 320px;
     height: 44px;
-    background: #FFFFFF;
     border: 1px solid rgba(31, 32, 65, 0.25);
+    padding-left: 14px;
+    box-sizing: border-box;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 14px;
+}
+
+.form-input:hover,
+.form-input:focus{
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-radius: 4px;
+}
+.form-input__input:focus,   
+.form-input__input:hover{
+    outline: none;
+    border: none;
+}
+
+.form-input__input::-webkit-input-placeholder{
+    color: rgba(31, 32, 65, 0.25);
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px;
-    color: rgba(31, 32, 65, 0.25);
+    line-height: 24px;
 }
-
-
-
-
-
+.form-input__input:hover::-webkit-input-placeholder,
+.form-input__input:focus::-webkit-input-placeholder{
+    color: rgba(31, 32, 65, 0.75);
+}
 
 .form-input-default{
     position: absolute;
@@ -39,26 +48,28 @@
     height: 67px;
     left: 141px;
     top: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 .form-input-focus{
+    position: absolute;
+    width: 320px;
+    height: 64.44px;
+    left: 141px;
     top: 227px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.form-input-dropdown{
-    top: 311px;
-}
-.form-input-masked-text-field{
+.form-input-masked {
+    position: absolute;
+    width: 320px;
+    height: 67px;
+    left: 141px;
     top: 395px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
-
-
-
-
-.form-input__unselected-input::-webkit-input-placeholder {
-    color: rgba(31, 32, 65, 0.25); 
-}
-
-.form-input__focus-input::-webkit-input-placeholder{
-    color: rgba(31, 32, 65, 0.75);
-}
-

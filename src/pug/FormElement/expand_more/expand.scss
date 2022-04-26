@@ -1,12 +1,27 @@
 .expand{
     position: absolute;
-    right: 5%;
-    top: 35px; 
+    right: 6%;
+    top: 12px; 
 }
 
-.expand_more_closed,
 .expand_more_open{
     position: absolute;
-    right: 5%;
-    top: 12px; 
+    width: 44px;
+    height: 44px;
+    right: 0%;
+    top: 0px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.expand_more_closed{
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    right: 0%;
+    top: 18px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;   
 }

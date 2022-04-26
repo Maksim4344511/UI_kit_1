@@ -1,23 +1,24 @@
-mixin buttons-click-split(disabl)
+mixin buttons-click-split(name, disabl)
     .buttons-container
-        button(disabled= disabl).buttons-container__btn-split CLICK ME
+        button(disabled= disabl).buttons-container__btn-split= name
 
-mixin buttons-click-emty(dis)
+mixin buttons-click-emty(name, disabl)
     .buttons-container
-        .buttons-container__border(disabled= dis)
-            button(disabled= dis).buttons-container__btn-empty CLICK ME
+        .buttons-container__border(disabled= disabl)
+            button(disabled= disabl).buttons-container__btn-empty= name
 
-mixin buttons-click-text(disab)
+mixin buttons-click-text(name, disabl)
     .buttons-container      
-        button(disabled= disab).buttons-container__btn-text CLICK ME
+        button(disabled= disabl).buttons-container__btn-text= name
 
 .buttons-exemple
-    +titlebox('buttons')
-    .span
-    +buttons-click-split()
-    +buttons-click-split('disabled')
-    +buttons-click-emty()
-    +buttons-click-emty('disabled')
+    .buttons-exemple__title buttons
+    .buttons-exemple__conteiner1
+        +buttons-click-split('CLICK ME')
+        +buttons-click-split('CLICK ME', 'disabled')
+    .buttons-exemple__conteiner2   
+        +buttons-click-emty('CLICK ME')
+        +buttons-click-emty('CLICK ME', 'disabled')
     .buttons-exemple__btn-text
-        +buttons-click-text()
-        +buttons-click-text('disabled')
+        +buttons-click-text('CLICK ME')
+        +buttons-click-text('CLICK ME', 'disabled')

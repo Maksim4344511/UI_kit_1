@@ -1,11 +1,4 @@
-
-
 mixin dropdown-expanded-guests(btn1, btn2)      
-    .dropdown-expanded-guests__title
-        .dropdown-expanded-guests__type dropdown
-    .dropdown-expanded-guests__input-field
-        +expand_more 
-        input.dropdown-expanded-guests__dropdown-btn(type = "text" value = " Сколько гостей" disabled)         
     .dropdown-expanded-guests__choice      
         .dropdown-expanded-guests__adults
             div взрослые
@@ -23,8 +16,12 @@ mixin dropdown-expanded-guests(btn1, btn2)
 
 
 .dropdown-expanded-guests-1
+    +titlebox('dropdown')
+    +dropdown('Сколько гостей')  
     +dropdown-expanded-guests('', 'Применить')
 
 
 .dropdown-expanded-guests-2
+    +titlebox('dropdown')
+    +dropdown('3 гостя')
     +dropdown-expanded-guests('Отчистить', 'Применить')    

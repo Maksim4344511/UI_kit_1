@@ -4,6 +4,9 @@ width: 241px;
 height: 106px;
 left: 979px;
 top: 540px;
+display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .pagination{
@@ -17,7 +20,7 @@ top: 540px;
     display: flex;
     width: 241px;
     height: 40.44px;
-    margin-top: 10px;  
+    
 }
 
 .pagination__figure1{
@@ -80,7 +83,6 @@ color: rgba(31, 32, 65, 0.5);
     align-items: center;
 }
 .pagination__text{
-    
 width: 229px;
 height: 24px;
 font-family: 'Montserrat';
@@ -89,5 +91,6 @@ font-weight: 400;
 font-size: 14px;
 line-height: 24px;
 color: rgba(31, 32, 65, 0.75);
-margin-top: 10px;
+padding-top: 10px;
+margin-left: 4px;
 }

@@ -52,10 +52,11 @@
 
 .reviews__content{
     display: flex;
+    justify-content: space-between;  
 }
 
 .reviews__text{
-    padding-left: 15px;
+    margin-left: 9px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -68,4 +69,5 @@
     position: relative;
     width: 39.72px;
     height: 20px;
+     
 }

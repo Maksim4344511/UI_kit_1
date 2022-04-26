@@ -1,7 +1,6 @@
 .titlebox {
     display: flex;
-    padding-bottom: 5px;
-    justify-content: space-between;
+    justify-content: space-between;  
 }
 
 .titlebox__title {
@@ -11,7 +10,9 @@
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #1F2041;
+    color: #1F2041; 
+    padding-top: 2px; 
+     
 }
 .titlebox__value{
     font-family: 'Montserrat';
@@ -21,6 +22,6 @@
     line-height: 15px;
     text-align: right;
     text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5);
-        
+    color: rgba(31, 32, 65, 0.5);  
+    margin-bottom: 3px;   
 }
