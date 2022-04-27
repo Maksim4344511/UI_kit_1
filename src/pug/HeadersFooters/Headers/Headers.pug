@@ -1,0 +1,49 @@
+mixin header-f1
+    .header-container
+        .header-container__logo 
+            +colors-logo
+            +text-logo
+        .header-container__nav
+            button.header-container__about О нас
+            .header-container__servisec
+                button.header-container__servisec-btn Услуги
+                    +expand-more-header
+            button.header-container__vacancies Вакансии
+            button.header-container__news Новости
+            .header-container__agreements   
+                button.header-container__agreements-btn Соглашения
+                    +expand-more-header
+            .header-container__buttons-container
+                button.header-container__login-btn Войти
+            button.header-container__register Зарегестрироваться
+
+             
+
+mixin header-f2
+    .header-container
+        .header-container__logo 
+            +colors-logo
+            +text-logo
+        .header-container__nav-f2
+            button.header-container__about О нас
+            .header-container__servisec
+                button.header-container__servisec-btn Услуги
+                    +expand-more-header
+            button.header-container__vacancies Вакансии
+            button.header-container__news Новости
+            .header-container__agreements   
+                button.header-container__agreements-btn Соглашения
+                    +expand-more-header
+            .header-container__rectangle    
+            .header-container__user Юлий Цезарь  
+            
+
+
+
+
+
+.header-example1
+    +header-f1
+    
+.header-example2
+    +header-f2

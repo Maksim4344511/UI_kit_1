@@ -25,3 +25,14 @@
     align-items: center;
     justify-content: center;   
 }
+
+.expand-more-header {
+    position: absolute;
+    width: 24px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    right: 0%;
+    top: 0%; 
+}
