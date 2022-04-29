@@ -10,15 +10,7 @@ mixin dropdown-rooms-content(object)
             div= object.bathroom
             +quantity_inner
 
-.dropdown-expanded-rooms    
-    +titlebox('Dropdown', 'expanded')
-    +dropdown('2 спальни, 2 кровати...')
-        
-    +dropdown-rooms-content({
-        rooms: 'спальни',
-        beds: 'кровати',
-        bathroom: 'ванные комнаты'
-    })    
+
     
         
              

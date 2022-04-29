@@ -11,14 +11,3 @@ mixin buttons-click-text(name, disabl)
     .buttons-container      
         button(disabled= disabl).buttons-container__btn-text= name
 
-.buttons-exemple
-    .buttons-exemple__title buttons
-    .buttons-exemple__conteiner1
-        +buttons-click-split('CLICK ME')
-        +buttons-click-split('CLICK ME', 'disabled')
-    .buttons-exemple__conteiner2   
-        +buttons-click-emty('CLICK ME')
-        +buttons-click-emty('CLICK ME', 'disabled')
-    .buttons-exemple__btn-text
-        +buttons-click-text('CLICK ME')
-        +buttons-click-text('CLICK ME', 'disabled')

@@ -1,43 +1,156 @@
 doctype html
 html(lang='en')
-  head
-    meta(charset='UTF-8')
-    meta(http-equiv='X-UA-Compatible' content='IE=edge')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    title Document
-  body.Form-Elements
-    include ../FormElement/expand_more/_expand_more.pug
-    include ../FormElement/btn-inner/_btn_inner.pug 
-    include ../colorsType/_logo
-    include ..//FormElement/arrow/_arrow.pug
-    include ..//FormElement/button-payment/arrow-forward.pug
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title Document
+    body.Form-Elements  
+        include connecting.pug
+        .form-input-subscription-text-field
+            +titlebox('subscription text field')
+            +subscription-text-field('Email')    
+        .comfort 
+            +advantages('insert_emoticon', "Комфорт", 'Шумопоглощающие стены')
+
+    .convenience
+        +advantages('location_city', "Удобство", 'Окно в каждой из спален')
+
+    .bullet-list-example
+        +bullet-list
+
+    .button-payment-exemple
+     +button-payment-exemple
+
+    .buttons-exemple
+        .buttons-exemple__title buttons
+        .buttons-exemple__conteiner1
+            +buttons-click-split('CLICK ME')
+            +buttons-click-split('CLICK ME', 'disabled')
+        .buttons-exemple__conteiner2   
+            +buttons-click-emty('CLICK ME')
+            +buttons-click-emty('CLICK ME', 'disabled')
+        .buttons-exemple__btn-text
+            +buttons-click-text('CLICK ME')
+            +buttons-click-text('CLICK ME', 'disabled')
+    .checkbox-buttons-example
+        +titlebox('Checkbox Buttons') 
+        +checkbox-buttons
+
+    .checkbox-closed-example
+        +checkbox-closed('expandable checkbox list') 
+        +expand_more       
+
+    .checkbox-open
+        +checkbox-open({
+            name1: 'Завтрак',
+            name2: 'Письменный стол',
+            name3: 'Стул для кормления',
+            name4: 'Кроватка',
+            name5: 'Телевизор',
+            name6: 'Шампунь',
+            name7: 'Телевизор',
+            name8: 'Шампунь'
+        })
+
+    .like-buttons
+        .like-buttons__title like button
+        .like-buttons__form
+            +like-buttons('like1', "2", like, 2)
+            +like-buttons('like2', "12", like2, 12)
+
+    .radio-buttons-example
+        +radio-buttons
+
+    .rate-buttons-title
+        +titlebox('rate button')
+
+    .rate-buttons-1
+        +rate-buttons-stars(4, 1)
     
-    include ../FormElement/titlebox/titlebox.pug
-    include ../FormElement/dropdown-input/form-input/_FormInput
-    include ../FormElement/dropdown-input/form-input-date/_FormInputDate
-    include ../FormElement/dropdown-input/subscript/_SubscriptionTextField.pug
-    include ../FormElement/dropdown-input/dropdown/_Dropdown.pug
-    include ../FormElement/dropdown-input/dropdown-rooms/_Dropdown_rooms.pug
-    include ../FormElement/dropdown-input/dropdown-guests/_dropdown_guests.pug
-   
+    .rate-buttons-2
+        +rate-buttons-stars(5, 0)
+
+    .rich-checkbox-buttons-example
+        +rich-checkbox-buttons
+
+    .toggle-example
+        .toggle__title Toggle
+        +toggle('toggleCheckbox1', 'Получать спецпредложения')
+        +toggle('toggleCheckbox2', 'Получать спецпредложения')
+
+    .dropdown-example    
+        +titlebox('Dropdown')    
+        +dropdown('Сколько гостей')        
+
+    .dropdown-default-rooms
+        +titlebox('Dropdown', 'Default')
+        +dropdown('2 спальни, 2 кровати...')        
     
+    .dropdown-expanded-guests-1
+        +titlebox('dropdown')
+        +dropdown('Сколько гостей')  
+        +dropdown-expanded-guests('', 'Применить')
+
+
+    .dropdown-expanded-guests-2
+        +titlebox('dropdown')
+        +dropdown('3 гостя')
+        +dropdown-expanded-guests('Отчистить', 'Применить')    
+
+    .dropdown-expanded-rooms    
+        +titlebox('Dropdown', 'expanded')
+        +dropdown('2 спальни, 2 кровати...')
+        
+        +dropdown-rooms-content({
+             rooms: 'спальни',
+             beds: 'кровати',
+             bathroom: 'ванные комнаты'
+        })
+
+    .form-input-default
+        +titlebox('Text Field', 'Default')
+        +form-input({
+                    name: "Email",
+                    value: "",
+                    placeholder: "Email"
+                })                
     
-    include ../FormElement/checkbox/checkbox-closed/checkbox-closed.pug
-    include ../FormElement/checkbox/checkbox-open/checkbox-open.pug
-    include ../FormElement/checkbox/checkbox-buttons/checkbox-buttons.pug
-    include ../FormElement/checkbox/rich-checkbox-buttons/rich-checkbox-buttons.pug
-    include ../FormElement/checkbox/radio-buttons/radio-buttons.pug
-    include ../FormElement/checkbox/toggle/toggle.pug
-    include ../FormElement/checkbox/like-buttons/like-buttons.pug
-    include ../FormElement/checkbox/rate-buttons/rate-buttons.pug
-    include ../FormElement/bullet-list/bullet-list.pug
-    include ../FormElement/advantages/advantages.pug
-    include ../FormElement/reviews/reviews.pug
-    include ../FormElement/range-slider/range-slider.pug
-    include ../FormElement/buttons/buttons.pug
-    include ../FormElement/button-payment/button-payment.pug
-    include ../FormElement/pagination/pagination.pug
-  
+      
+    .form-input-focus
+        +titlebox('Text Field', 'HOVER / FOCUS')
+        +form-input({
+                    name: "Text Field",
+                    value: "",
+                    placeholder: "This is pretty awesome"
+                })              
+    
+    .form-input-masked
+        +titlebox('masked text field')
+        +form-input({
+                    name: "masked",
+                    value: "",
+                    placeholder: "ДД.ММ.ГГГГ"
+                })   
+
+    .pagination-example
+        +titlebox('pagination')
+        +pagination
+
+    .range-slider-exemle
+        +range-slider   
+
+    .review-Murad
+        +reviews({
+            img: 'reviews__author-img',
+            name: 'Мурад Сарафанов',
+            date: '5 дней назад',
+            text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.',
+            like: "12"
+        })
+
+
+
 
     
     

@@ -2,29 +2,6 @@ mixin form-input(object)
     .form-input
         input.form-input__input(type=object.type name= object.name value= object.value placeholder= object.placeholder id= object.id)
 
-.form-input-default
-    +titlebox('Text Field', 'Default')
-    +form-input({
-                    name: "Email",
-                    value: "",
-                    placeholder: "Email"
-                })                
-    
-      
-.form-input-focus
-    +titlebox('Text Field', 'HOVER / FOCUS')
-    +form-input({
-                    name: "Text Field",
-                    value: "",
-                    placeholder: "This is pretty awesome"
-                })              
-    
-.form-input-masked
-    +titlebox('masked text field')
-    +form-input({
-                    name: "masked",
-                    value: "",
-                    placeholder: "ДД.ММ.ГГГГ"
-                })              
+
     
   
