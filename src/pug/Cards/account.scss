@@ -1,0 +1,100 @@
+.Cards{
+    position: relative;
+    width: 1440px;
+    height: 1350px;
+    background: #F4F4F6;
+}
+
+.account{
+    position: absolute;
+    width: 380px;
+    height: 646px;
+    left: 140px;
+    top: 564px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.account__title{
+    width: 320px;
+    height: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+color: #1F2041;
+margin-top: 40px;
+}
+
+.account__data-user{
+    height: 132px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.account__data-user-birth{
+    height: 66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.account__data-for-enter{
+    height: 139px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;    
+    margin-bottom: 20px;
+}
+.account__title-data-for-enter{
+height: 15px;
+width: 320px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+text-transform: uppercase;
+color: #1F2041;
+text-align: left; 
+margin-top: 20px;
+margin-bottom: 5px;
+ 
+}
+
+.account__enter{
+    width: 100%;
+    display: flex;    
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.account__eter-text{   
+width: 186px;
+left: 170px;
+top: 1148px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+color: #000000;
+align-self:center;
+margin-right: 35px;
+
+}

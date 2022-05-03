@@ -13,36 +13,36 @@ html(lang='en')
         .comfort 
             +advantages('insert_emoticon', "Комфорт", 'Шумопоглощающие стены')
 
-    .convenience
-        +advantages('location_city', "Удобство", 'Окно в каждой из спален')
+        .convenience
+            +advantages('location_city', "Удобство", 'Окно в каждой из спален')
 
-    .bullet-list-example
-        +bullet-list
+        .bullet-list-example
+            +bullet-list
 
-    .button-payment-exemple
-     +button-payment-exemple
+        .button-payment-exemple
+            +button-payment-exemple
 
-    .buttons-exemple
-        .buttons-exemple__title buttons
-        .buttons-exemple__conteiner1
-            +buttons-click-split('CLICK ME')
-            +buttons-click-split('CLICK ME', 'disabled')
-        .buttons-exemple__conteiner2   
-            +buttons-click-emty('CLICK ME')
-            +buttons-click-emty('CLICK ME', 'disabled')
-        .buttons-exemple__btn-text
-            +buttons-click-text('CLICK ME')
-            +buttons-click-text('CLICK ME', 'disabled')
-    .checkbox-buttons-example
-        +titlebox('Checkbox Buttons') 
-        +checkbox-buttons
+        .buttons-exemple
+            .buttons-exemple__title buttons
+            .buttons-exemple__conteiner1
+                +buttons-click-split('CLICK ME')
+                +buttons-click-split('CLICK ME', 'disabled')
+            .buttons-exemple__conteiner2   
+                +buttons-click-emty('CLICK ME')
+                +buttons-click-emty('CLICK ME', 'disabled')
+            .buttons-exemple__btn-text
+                +buttons-click-text('CLICK ME')
+                +buttons-click-text('CLICK ME', 'disabled')
+        .checkbox-buttons-example
+            +titlebox('Checkbox Buttons') 
+            +checkbox-buttons
 
-    .checkbox-closed-example
-        +checkbox-closed('expandable checkbox list') 
-        +expand_more       
+        .checkbox-closed-example
+            +checkbox-closed('expandable checkbox list') 
+            +expand_more       
 
-    .checkbox-open
-        +checkbox-open({
+        .checkbox-open
+            +checkbox-open({
             name1: 'Завтрак',
             name2: 'Письменный стол',
             name3: 'Стул для кормления',
@@ -53,105 +53,119 @@ html(lang='en')
             name8: 'Шампунь'
         })
 
-    .like-buttons
-        .like-buttons__title like button
-        .like-buttons__form
-            +like-buttons('like1', "2", like, 2)
-            +like-buttons('like2', "12", like2, 12)
+        .like-buttons
+            .like-buttons__title like button
+            .like-buttons__form
+                +like-buttons('like1', "2", like, 2)
+                +like-buttons('like2', "12", like2, 12)
 
-    .radio-buttons-example
-        +radio-buttons
+        .radio-buttons-example
+            +titlebox('Radio Buttons')    
+            +radio-buttons
 
-    .rate-buttons-title
-        +titlebox('rate button')
+        .rate-buttons-title
+            +titlebox('rate button')
 
-    .rate-buttons-1
-        +rate-buttons-stars(4, 1)
+        .rate-buttons-1
+            +rate-buttons-stars(4, 1)
     
-    .rate-buttons-2
-        +rate-buttons-stars(5, 0)
+        .rate-buttons-2
+            +rate-buttons-stars(5, 0)
 
-    .rich-checkbox-buttons-example
-        +rich-checkbox-buttons
+        .rich-checkbox-buttons-example
+            +rich-checkbox-buttons
 
-    .toggle-example
-        .toggle__title Toggle
-        +toggle('toggleCheckbox1', 'Получать спецпредложения')
-        +toggle('toggleCheckbox2', 'Получать спецпредложения')
+        .toggle-example
+            .toggle__title Toggle
+            +toggle('toggleCheckbox1', 'Получать спецпредложения')
+            +toggle('toggleCheckbox2', 'Получать спецпредложения')
 
-    .dropdown-example    
-        +titlebox('Dropdown')    
-        +dropdown('Сколько гостей')        
+        .dropdown-example    
+            +titlebox('Dropdown')    
+            +dropdown('Сколько гостей')        
 
-    .dropdown-default-rooms
-        +titlebox('Dropdown', 'Default')
-        +dropdown('2 спальни, 2 кровати...')        
+        .dropdown-default-rooms
+            +titlebox('Dropdown', 'Default')
+            +dropdown('2 спальни, 2 кровати...')        
     
-    .dropdown-expanded-guests-1
-        +titlebox('dropdown')
-        +dropdown('Сколько гостей')  
-        +dropdown-expanded-guests('', 'Применить')
+        .dropdown-expanded-guests-1
+            +titlebox('dropdown')
+            +dropdown('Сколько гостей')  
+            +dropdown-expanded-guests('', 'Применить')
 
 
-    .dropdown-expanded-guests-2
-        +titlebox('dropdown')
-        +dropdown('3 гостя')
-        +dropdown-expanded-guests('Отчистить', 'Применить')    
+        .dropdown-expanded-guests-2
+            +titlebox('dropdown')
+            +dropdown('3 гостя')
+            +dropdown-expanded-guests('Отчистить', 'Применить')    
 
-    .dropdown-expanded-rooms    
-        +titlebox('Dropdown', 'expanded')
-        +dropdown('2 спальни, 2 кровати...')
+        .dropdown-expanded-rooms    
+            +titlebox('Dropdown', 'expanded')
+            +dropdown('2 спальни, 2 кровати...')
         
-        +dropdown-rooms-content({
+            +dropdown-rooms-content({
              rooms: 'спальни',
              beds: 'кровати',
              bathroom: 'ванные комнаты'
         })
 
-    .form-input-default
-        +titlebox('Text Field', 'Default')
-        +form-input({
+        .form-input-default
+            +titlebox('Text Field', 'Default')
+            +form-input({
                     name: "Email",
                     value: "",
                     placeholder: "Email"
                 })                
     
       
-    .form-input-focus
-        +titlebox('Text Field', 'HOVER / FOCUS')
-        +form-input({
+        .form-input-focus
+            +titlebox('Text Field', 'HOVER / FOCUS')
+            +form-input({
                     name: "Text Field",
                     value: "",
                     placeholder: "This is pretty awesome"
                 })              
     
-    .form-input-masked
-        +titlebox('masked text field')
-        +form-input({
+        .form-input-masked
+            +titlebox('masked text field')
+            +form-input({
                     name: "masked",
                     value: "",
                     placeholder: "ДД.ММ.ГГГГ"
                 })   
 
-    .pagination-example
-        +titlebox('pagination')
-        +pagination
+        .pagination-example
+            +titlebox('pagination')
+            +pagination
 
-    .range-slider-exemle
-        +range-slider   
+        .range-slider-exemle
+            +range-slider   
 
-    .review-Murad
-        +reviews({
+        .review-Murad
+            +reviews({
             img: 'reviews__author-img',
             name: 'Мурад Сарафанов',
             date: '5 дней назад',
             text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.',
             like: "12"
         })
+         
+        .checkbox-buttons-example
+            +titlebox('Checkbox Buttons') 
+            +checkbox-buttons
 
 
+        .form-date-f1
+            +titlebox('date Dropdown')
+            +date-dropdown('ДД.ММ.ГГГГ')     
 
+        .form-date-f2
+            +titlebox('date Dropdown')
+            +date-dropdown('19.08.2019')       
 
+        .form-filter-date-dropdown
+            +titlebox('filter date dropdown')
+            +date-dropdown('19 авг - 23 авг')       
     
     
     

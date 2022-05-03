@@ -1,0 +1,22 @@
+mixin account
+    .account
+        .account__title Регистрация аккаунта
+        .account__data-user
+            +form-input({name: "Name", value: "", placeholder: "Имя" })            
+            +form-input({name: "Sname", value: "", placeholder: "Фамилия" })  
+            +radio-buttons
+        .account__data-user-birth
+            +titlebox('дата рождения')
+            +form-input({name: "date-of-birth", value: "", placeholder: "ДД.ММ.ГГГГ"
+                })
+        .account__title-data-for-enter данные для входа в сервис        
+        .account__data-for-enter            
+            +form-input({name: "Email", value: "", placeholder: "Email" })  
+            +form-input({name: "password", value: "", placeholder: "Пароль" })
+            +toggle('toggleCheckbox3', 'Получать спецпредложения')  
+        +button-payment-exemple
+        .account__enter
+            .account__eter-text Уже есть аккаунт на Toxin
+            +buttons-click-emty('войти')
+            
+                  

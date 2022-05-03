@@ -7,6 +7,7 @@
 }
 
 .button-payment__btn{
+    position: relative;
     width: 320px;
     height: 44px;    
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -27,7 +28,7 @@
     color: #FFFFFF;
 }
 
-.button-payment-arrow-forward {
+.button-payment-arrow-forward{
     position: absolute;
     top: 0px;
     left: 276px;

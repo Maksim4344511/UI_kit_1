@@ -1,85 +1,58 @@
-.form-input-date-f1{
+.form-date-f1{
+    position: absolute;
+    width: 150px;
+    height: 65px;
     left: 141px;
+    top: 502px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.form-input-date-f2{
+
+.form-date-f2 {
+    position: absolute;
+    width: 150px;
+    height: 65px;
     left: 311px;
+    top: 502px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.form-input-filter-date-dropdown {
+
+.form-filter-date-dropdown{
     position: absolute;
     width: 266px;
     height: 65px;
     left: 141px;
     top: 607px;
-    
-}
-.form-input-date{
-    position: absolute;
-    width: 150px;
-    height: 64.44px;
-    top: 502px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.form-input-date__type{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
+.date-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.date-dropdown__btn{   
+    width: 100%;
+    height: 44px;
+    outline: none;
+    display: inline-block;
     text-align: left;
-    text-transform: uppercase;
-    color: #1F2041;
-    box-sizing: border-box;
-}
-
-.form-input-filter-date-dropdown__type{
-    width: 197px;
-    height: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    cursor: pointer;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #1F2041;    
-}
-
-.form-input-date__input-field{
-    width: 150px;
-    height: 44px;
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    cursor: pointer;
-}
-
-.form-input-filter-date-dropdown__input-field {
-    width: 266px;
-    height: 44px;
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    cursor: pointer;
-}
-
-.form-input-date__dropdown-date{
-    width: 150px;
-    height: 44px;
-    background: #FFFFFF;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    box-sizing: border-box;
-    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
-    padding: 12px;
 }
-
-.form-input-filter-date-dropdown__dropdown-date {
-    width: 266px;
-    height: 44px;
-    height: 44px;
-    background: #FFFFFF;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    box-sizing: border-box;
-    border-radius: 4px;
-    color: rgba(31, 32, 65, 0.75);
-    padding: 12px;
-}
-
