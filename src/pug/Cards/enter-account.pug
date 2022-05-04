@@ -1,0 +1,10 @@
+mixin enter-account
+    .enter-account
+        .enter-account__title Войти
+        .enter-account__data-user
+            +form-input({name: "Email", value: "", placeholder: "Email" })            
+            +form-input({name: "password", value: "", placeholder: "Пароль" })              
+        +button-payment('войти')
+        .enter-account__create
+            .enter-account__eter-text Нет аккаунта на Toxin?
+            +buttons-click-emty('создать')

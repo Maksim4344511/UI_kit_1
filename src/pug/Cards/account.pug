@@ -14,7 +14,7 @@ mixin account
             +form-input({name: "Email", value: "", placeholder: "Email" })  
             +form-input({name: "password", value: "", placeholder: "Пароль" })
             +toggle('toggleCheckbox3', 'Получать спецпредложения')  
-        +button-payment-exemple
+        +button-payment('перейти к оплате')
         .account__enter
             .account__eter-text Уже есть аккаунт на Toxin
             +buttons-click-emty('войти')

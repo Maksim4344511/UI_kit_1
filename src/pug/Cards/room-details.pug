@@ -1,0 +1,19 @@
+mixin room-deatails
+    .room-deatails
+        .room-deatails__title
+            .room-deatails__number №888
+            .room-deatails__category люкс
+            .room-deatails__price-in-day 9 990 ₽ в сутки
+        .room-deatails__date
+            .room-deatails__date-arrival
+                +titlebox('прибытие')
+                +date-dropdown('19.08.2019')
+            .room-deatails__date-departure
+                +titlebox('выезд')
+                +date-dropdown('23.08.2019')
+        .room-deatails__guests
+            +titlebox('гости')    
+            +dropdown('3 гостя')
+        .room-deatails__price-calculation
+        +button-payment('забронировать')
+        

@@ -5,12 +5,15 @@
     background: #F4F4F6;
 }
 
-.account{
-    position: absolute;
-    width: 380px;
-    height: 646px;
+.account-example{
+    position: absolute;    
     left: 140px;
     top: 564px;
+    
+}
+.account{
+    width: 380px;
+    height: 646px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
@@ -35,7 +38,7 @@ margin-top: 40px;
 }
 
 .account__data-user{
-    height: 132px;
+    height: 140px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -44,7 +47,7 @@ margin-top: 40px;
 }
 
 .account__data-user-birth{
-    height: 66px;
+    height: 70px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -52,7 +55,7 @@ margin-top: 40px;
     margin-top: 20px;
 }
 .account__data-for-enter{
-    height: 139px;
+    height: 140px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -76,7 +79,7 @@ margin-bottom: 5px;
 }
 
 .account__enter{
-    width: 100%;
+    width: 380px;    
     display: flex;    
     align-items: flex-start;
     justify-content: center;
@@ -86,8 +89,7 @@ margin-bottom: 5px;
 
 .account__eter-text{   
 width: 186px;
-left: 170px;
-top: 1148px;
+height: 14px;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
@@ -95,6 +97,6 @@ font-size: 14px;
 line-height: 18px;
 color: #000000;
 align-self:center;
-margin-right: 35px;
+margin-right: 34px;
 
 }

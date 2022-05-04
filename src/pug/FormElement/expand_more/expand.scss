@@ -1,7 +1,12 @@
 .expand{
+    width: 44px;
+    height: 44px;
     position: absolute;
-    right: 6%;
-    top: 12px; 
+    right: 0;
+    top: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;  
 }
 
 .expand_more_open{

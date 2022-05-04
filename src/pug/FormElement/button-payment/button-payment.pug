@@ -1,6 +1,6 @@
-mixin button-payment-exemple()
+mixin button-payment(name)
     .button-payment
-        button.button-payment__btn перейти к оплате
+        button.button-payment__btn= name
             .button-payment-arrow-forward
                 +arrow-forward
 

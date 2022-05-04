@@ -1,0 +1,15 @@
+mixin find-rooms
+    .find-rooms
+        .find-rooms__title Найдём номера под ваши пожелания
+        .find-rooms__date
+            .find-rooms__date-arrival
+                +titlebox('прибытие')
+                +date-dropdown('ДД.ММ.ГГГГ')
+            .find-rooms__date-departure
+                +titlebox('выезд')
+                +date-dropdown('ДД.ММ.ГГГГ')
+        .find-rooms__guests
+            +titlebox('гости')    
+            +dropdown('Сколько гостей')
+        +button-payment('подобрать номер')
+        
