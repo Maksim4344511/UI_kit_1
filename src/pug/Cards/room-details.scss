@@ -1,9 +1,9 @@
-.room-deatails-example{
+.room-details-example{
     position: absolute;
     left: 560px;
     top: 150px;
 }
-.room-deatails {
+.room-details {
     width: 380px;
     height: 512px;       
     background: #FFFFFF;
@@ -17,30 +17,146 @@
     align-items: center;
 }
 
-.room-deatails__title{
+.room-details__title{
+    width: 320px;
+    height: 24px;
+    display: flex;     
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 43px;    
+}
+
+.room-details__number{        
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1F2041;
+    margin-right: 4px;   
+    
+}
+
+.room-details__figure {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 24px;
+color: #1F2041;
+margin-right: 8px;
+
+}
+
+.room-details__category {
+    width: 41px;
+    height: 15px;        
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;    
+    color: #BC9CFF;
+    margin-right: 102px;
+}
+
+.room-details__price-in-day{    
+    width: 130px; //-100       
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;    
+    color: rgba(31, 32, 65, 0.5);
+    display: flex;
+    justify-content: space-between; 
+} 
+
+.room-details__price-in-day b {
+    font-size: 14px;
+}
+
+
+.room-details__date{
+    width: 320px;    
     display: flex;     
     align-items: center;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
-.room-deatails__number{}
-
-.room-deatails__category {}
-
-.room-deatails__price-in-day{} 
-
-.room-deatails__date{
-    display: flex;     
-    align-items: center;
+.room-details__date-arrival{
+    height: 65px;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
 }
-
-.room-deatails__date-arrival{}
                 
-.room-deatails__date-departure{}
+.room-details__date-departure{
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
                
-.room-deatails__guests{}
-            
-.room-deatails__price-calculation{}
-        
+.room-details__guests{
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20.5px;
+}
+ 
+.room-details__price-calculation{
+    width: 318px;
+    height: 158px;
+    margin-bottom: 20px;
+}
 
+.room-details__price-calculation td{
+    height: 34px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;    
+    color: rgba(31, 32, 65, 0.75);
+    
+}
+
+.room-details__price-calculation th{
+    height: 54px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1F2041;
+    
+} 
+.room-details__price-calculation td:last-child,
+.room-details__price-calculation th:last-child{
+    width: 57px;
+    text-align: right;    
+} 
+
+.room-details__price-calculation td:first-child{
+    width: 214px;
+}     
+
+
+
+td.room-details__info{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;    
+    text-align: left;
+    color: rgba(31, 32, 65, 0.25);
+
+}
