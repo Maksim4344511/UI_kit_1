@@ -44,6 +44,50 @@
     border-radius: 7.5px;    
 }
 
+.room-image__slider-group{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 270px;
+    height: 257px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.room-image__slider-left{   
+    width: 42px;
+    height: 151px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.room-image__arrow-left{
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #FFFFFF;
+    border-left: 3px solid #FFFFFF;
+    transform: rotate(-45deg);
+}
+
+.room-image__slider-right{   
+    width: 42px;
+    height: 151px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-180deg);
+}
+
+.room-image__arrow-right{
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #FFFFFF;
+    border-left: 3px solid #FFFFFF;
+    transform: rotate(-45deg);
+}
 
 
 

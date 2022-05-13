@@ -9,19 +9,18 @@ top: 360px;
 .footer-container{
     display: flex;
     flex-direction: column; 
-    width: 1440px;
+    max-width: 1440px;
     height: 443px;
     background: #FFFFFF;
     box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
 }
 
-.footer-container__menu{
-    
-    width: 1440px;
-    height: 372px;
+.footer-container__menu{ 
+    display: flex;    
     background: #FFFFFF;
     box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 
@@ -74,7 +73,7 @@ padding-top: 21px;
 .footer-container__brend {    
     display: inline-block;
     vertical-align: top; 
-    width: 260px;
+    max-width: 260px;
     height: 132px;
     margin-left: 140px;      
     }
@@ -82,7 +81,7 @@ padding-top: 21px;
 .footer-container__nav{
 display: inline-block; 
 vertical-align: top;    
-width: 143px;
+max-width: 143px;
 height: 168px;
 margin-left: 40px;
 padding-top: 4px;  
@@ -91,7 +90,7 @@ padding-top: 4px;
 .footer-container__about{  
     display: inline-block;
     vertical-align: top;     
-    width: 108px;
+    max-width: 108px;
     height: 168px;
     margin-left: 57px; 
     padding-top: 4px;  
@@ -99,7 +98,7 @@ padding-top: 4px;
 .footer-container__support{
     display: inline-block;
     vertical-align: top;    
-width: 149px;
+    max-width: 149px;
 height: 130px;
 margin-left: 92px;
 padding-top: 4px;  
@@ -108,7 +107,7 @@ padding-top: 4px;
 .footer-container__subscription{    
     display: inline-block;
     vertical-align: top; 
-    width: 260px;
+    max-width: 260px;
     height: 108px;
     margin-left: 51px; 
     padding-top: 4px;
@@ -121,7 +120,7 @@ padding-top: 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;      
-    width: 1440px;
+    max-width: 1440px;
     height: 70px;
     background: #FFFFFF;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);

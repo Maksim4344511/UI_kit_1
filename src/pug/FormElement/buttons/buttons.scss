@@ -50,9 +50,9 @@
     opacity: 0.5;
 }
 
-.buttons-container__btn-empty{
-    width: 97px;
-    height: 42px;
+.buttons-container__btn-empty{ 
+    width: 92px;
+    height: 40px;  
     background:  #FFFFFF;
     border-radius: 22px;
     border: none;
@@ -68,7 +68,9 @@
     line-height: 15px;
     text-transform: uppercase;
     color: #BC9CFF;
-    margin: 1px;     
+    margin: auto;
+    
+       
 }
 
 .buttons-container__border{
@@ -76,6 +78,7 @@
     height: 44px;
     border-radius: 22px;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    display: flex;
 }
 
 .buttons-container__btn-text{      

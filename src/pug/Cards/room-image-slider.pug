@@ -1,4 +1,4 @@
-mixin room-image(object)
+mixin room-image2(object)
     -var x = object.stars1
     -var y = object.stars2
     .room-image
@@ -9,6 +9,11 @@ mixin room-image(object)
             .room-image__ellipse
             .room-image__ellipse
             .room-image__ellipse
+        .room-image__slider-group
+            .room-image__slider-left
+                .room-image__arrow-left
+            .room-image__slider-right     
+                .room-image__arrow-right
         .room-image__info 
             .room-image__number №
             .room-image__number-figure= object.number

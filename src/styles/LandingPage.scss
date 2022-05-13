@@ -1,0 +1,36 @@
+.landing-page{
+    max-width: 1440px;
+    min-width: 800px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+.landing-page__img{
+    max-width: 1440px;
+    height: 891px;
+    background-image:  url('/src/img/rooms/BigImage1.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+
+}
+
+.landing-page__slogan{  
+max-width: 297px;
+height: 48px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+text-align: right;
+color: rgba(31, 32, 65, 0.75);
+align-self: flex-end;
+margin-bottom: 18px;
+margin-right: 140px;
+}
+
+.landing-page__find-rooms{
+    margin-top: 70px;
+    margin-left: 140px;
+}
