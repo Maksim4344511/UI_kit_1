@@ -83,26 +83,24 @@ html(lang='en')
 
         .dropdown-example    
             +titlebox('Dropdown')    
-            +dropdown('Сколько гостей')        
+            +dropdown('Сколько гостей', ['взрослые', 'дети', 'младенцы'], 'Очистить', 'Применить')        
 
         .dropdown-default-rooms
             +titlebox('Dropdown', 'Default')
-            +dropdown('2 спальни, 2 кровати...')        
+            +dropdown-mini('2 спальни, 2 кровати...')        
     
         .dropdown-expanded-guests-1
             +titlebox('dropdown')
-            +dropdown('Сколько гостей')  
-            +dropdown-expanded-guests('', 'Применить')
+            +dropdown('Сколько гостей', ['взрослые', 'дети', 'младенцы'], '', 'Применить') 
 
 
         .dropdown-expanded-guests-2
             +titlebox('dropdown')
-            +dropdown('3 гостя')
-            +dropdown-expanded-guests('Отчистить', 'Применить')    
+            +dropdown('Сколько гостей', ['взрослые', 'дети', 'младенцы'], 'Очистить', 'Применить')    
 
         .dropdown-expanded-rooms    
             +titlebox('Dropdown', 'expanded')
-            +dropdown('2 спальни, 2 кровати...')
+            +dropdown-mini('2 спальни, 2 кровати...')
         
             +dropdown-rooms-content({
              rooms: 'спальни',
@@ -155,10 +153,9 @@ html(lang='en')
             +titlebox('Checkbox Buttons') 
             +checkbox-buttons
 
-
         .form-date-f1
             +titlebox('date Dropdown')
-            +date-dropdown('ДД.ММ.ГГГГ')     
+            +date-dropdown('ДД.ММ.ГГГГ')   
 
         .form-date-f2
             +titlebox('date Dropdown')
@@ -166,7 +163,9 @@ html(lang='en')
 
         .form-filter-date-dropdown
             +titlebox('filter date dropdown')
-            +date-dropdown('19 авг - 23 авг')       
+            +date-dropdown('19 авг - 23 авг') 
+
+           
     
     
     

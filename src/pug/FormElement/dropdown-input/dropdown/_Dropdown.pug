@@ -1,18 +1,13 @@
-mixin dropdown(name)
+mixin dropdown(name, array_btn, btn1, btn2)
     .dropdown
         button.dropdown__btn= name
-            +expand_more             
-        //-Ширина авто, а как быть с высотой, для разных дропов, не понял
-        //-.dropdown__content        
-            .dropdown__choice
-                .div test
-                +quantity_inner
-            .dropdown__choice
-                .div test
-                +quantity_inner
-            .dropdown__choice
-                .div test
-                +quantity_inner
+            +expand_more 
+        .dropdown__content
+            -for(var i=0;  i<array_btn.length; i++)
+                .dropdown__choice= array_btn[i]
+                    +quantity_inner
+            .dropdown-expanded-guests__button   
+                .dropdown-expanded-guests__button-clear(type = "button" value = "Очистить")= btn1   
+                .dropdown-expanded-guests__button-apply(type = "button" value = "Применить")= btn2
             
                 
-

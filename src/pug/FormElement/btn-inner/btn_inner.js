@@ -6,7 +6,7 @@ import $ from "jquery";
 $('.quantity_inner .bt_minus').click(function() {
     let $input = $(this).parent().find('.quantity');
     let count = parseInt($input.val()) - 1;
-    count = count < 1 ? 1 : count;
+    count = count < 0 ? 0 : count;
     $input.val(count);
 });
 // плюс

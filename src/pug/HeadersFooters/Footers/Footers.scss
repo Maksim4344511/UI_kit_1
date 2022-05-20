@@ -16,12 +16,14 @@ top: 360px;
 }
 
 .footer-container__menu{ 
+    max-width: 1440px;
     display: flex; 
     flex-wrap: wrap;   
     background: #FFFFFF;
     box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 6.944%;
+    padding-bottom: 7.17%;
+    padding-left: 9.722%;
 }
 
 
@@ -71,12 +73,14 @@ color: rgba(31, 32, 65, 0.5);
 padding-top: 21px;
 }
 
+
+
 .footer-container__brend {    
     display: inline-block;
     vertical-align: top; 
     max-width: 260px;
     height: 132px;
-    margin-left: 140px;      
+    margin-right: 3.076%;      
     }
 
 .footer-container__nav{
@@ -84,7 +88,7 @@ display: inline-block;
 vertical-align: top;    
 max-width: 143px;
 height: 168px;
-margin-left: 40px;
+margin-right: 4.384%;
 padding-top: 4px;  
 }
 
@@ -93,7 +97,7 @@ padding-top: 4px;
     vertical-align: top;     
     max-width: 108px;
     height: 168px;
-    margin-left: 57px; 
+    margin-right: 7.076%; 
     padding-top: 4px;  
 }
 .footer-container__support{
@@ -101,7 +105,7 @@ padding-top: 4px;
     vertical-align: top;    
     max-width: 149px;
 height: 130px;
-margin-left: 92px;
+margin-right: 3.964%;
 padding-top: 4px;  
 }
 
@@ -109,11 +113,11 @@ padding-top: 4px;
     display: inline-block;
     vertical-align: top; 
     max-width: 260px;
-    height: 108px;
-    margin-left: 51px; 
-    padding-top: 4px;
-    
+    height: 108px;     
+    padding-top: 4px;    
 }
+
+
 
 // copyright
 

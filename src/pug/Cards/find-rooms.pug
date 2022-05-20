@@ -1,4 +1,4 @@
-mixin find-rooms
+mixin find-rooms(guests)
     .find-rooms
         .find-rooms__title Найдём номера под ваши пожелания
         .find-rooms__date
@@ -8,8 +8,8 @@ mixin find-rooms
             .find-rooms__date-departure
                 +titlebox('выезд')
                 +date-dropdown('ДД.ММ.ГГГГ')
-        .find-rooms__guests
-            +titlebox('гости')    
-            +dropdown('Сколько гостей')
+        .find-rooms__guests          
+            +titlebox('гости')              
+            +dropdown('Сколько гостей', ['взрослые', 'дети', 'младенцы'], 'Очистить', 'Применить') 
         +button-payment('подобрать номер')
         

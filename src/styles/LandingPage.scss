@@ -1,17 +1,17 @@
 .landing-page{
+    position: relative;
     max-width: 1440px;
-    height: 1343px;    
-    margin: 0px auto;
-    padding: 0px 15px;
+    min-height: 1273px;
+    height: auto;
+    margin: auto;    
     display: flex;
     flex-direction: column;
     overflow: hidden;    
-    
 }
 
 .landing-page__img{    
     max-width: 1440px;
-    min-height: 100vh;
+    height: auto;
     background-image: url('/src/img/rooms/BigImage1.png');   
     background-size: cover;
     background-repeat: no-repeat; 
@@ -20,9 +20,9 @@
     flex-wrap: wrap;
     justify-content: space-between;  
     padding-left: 9.722%;
-    padding-right: 9.722%;
+    padding-right: 9.305%;
     padding-top: 4.861%;
-    padding-bottom: 1.125%;
+    padding-bottom: 1.25%;
 }
 
 .landing-page__slogan{  
@@ -36,4 +36,5 @@ line-height: 24px;
 text-align: right;
 color: rgba(31, 32, 65, 0.75);
 align-self: flex-end;
+margin-top: 59.519%;
 }
