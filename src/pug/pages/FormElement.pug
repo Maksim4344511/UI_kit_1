@@ -36,23 +36,60 @@ html(lang='en')
                 +buttons-click-text('CLICK ME', 'disabled')
         .checkbox-buttons-example
             +titlebox('Checkbox Buttons') 
-            +checkbox-buttons
+            +checkbox-buttons([
+                {   items: "Можно курить",
+                    id: 'btn1',
+                    checked: false                  
+                },
+                {   items: "Можно с питомцами",
+                    id: 'btn2',
+                    checked: ""                   
+                },
+                {   items: "Можно пригласить гостей (до 10 человек)",
+                    id: 'btn3',
+                    checked: ""                   
+                }
+            ])
 
         .checkbox-closed-example
             +checkbox-closed('expandable checkbox list') 
             +expand_more       
 
         .checkbox-open
-            +checkbox-open({
-            name1: 'Завтрак',
-            name2: 'Письменный стол',
-            name3: 'Стул для кормления',
-            name4: 'Кроватка',
-            name5: 'Телевизор',
-            name6: 'Шампунь',
-            name7: 'Телевизор',
-            name8: 'Шампунь'
-        })
+            +checkbox-open([
+                {   items: "Завтрак",
+                    id: "open1",
+                    checked: false                  
+                },
+                {   items: "Письменный стол",
+                    id: "open2",
+                    checked: ""                   
+                },
+                {   items: "Стул для кормления",
+                    id: "open3",
+                    checked: ""                   
+                },
+                {   items: "Кроватка",
+                    id: "open4",
+                    checked: ""                   
+                },
+                {   items: "Телевизор",
+                    id: "open5",
+                    checked: false                   
+                },
+                {   items: "Шампунь",
+                    id: "open6",
+                    checked: false                  
+                },
+                {   items: "Телевизор",
+                    id: "open7",
+                    checked: false                   
+                },
+                {   items: "Шампунь",
+                    id: "open8",
+                    checked: false                  
+                }
+        ])
 
         .like-buttons
             .like-buttons__title like button
@@ -83,30 +120,47 @@ html(lang='en')
 
         .dropdown-example    
             +titlebox('Dropdown')    
-            +dropdown('Сколько гостей', ['взрослые', 'дети', 'младенцы'], 'Очистить', 'Применить')        
+            +dropdown({
+                name: 'Сколько гостей',
+                btns: ['взрослые', 'дети', 'младенцы'],
+                clear: 'Очистить',
+                accept: 'Применить'
+                 })        
 
         .dropdown-default-rooms
             +titlebox('Dropdown', 'Default')
-            +dropdown-mini('2 спальни, 2 кровати...')        
+            +dropdown-rooms({
+                name: '2 спальни, 2 кровати...',
+                btns: ['спальни', 'кровати', 'ванные комнаты'],
+                })              
     
         .dropdown-expanded-guests-1
             +titlebox('dropdown')
-            +dropdown('Сколько гостей', ['взрослые', 'дети', 'младенцы'], '', 'Применить') 
+            +dropdown({
+                name: 'Сколько гостей',
+                btns: ['взрослые', 'дети', 'младенцы'],
+                clear: '',
+                accept: 'Применить'
+                 })   
 
 
         .dropdown-expanded-guests-2
             +titlebox('dropdown')
-            +dropdown('Сколько гостей', ['взрослые', 'дети', 'младенцы'], 'Очистить', 'Применить')    
+            +dropdown({
+                name: '3 гостя',
+                btns: ['взрослые', 'дети', 'младенцы'],
+                clear: 'Очистить',
+                accept: 'Применить'
+                 })       
 
         .dropdown-expanded-rooms    
             +titlebox('Dropdown', 'expanded')
-            +dropdown-mini('2 спальни, 2 кровати...')
+            +dropdown-rooms({
+                name: '2 спальни, 2 кровати...',
+                btns: ['спальни', 'кровати', 'ванные комнаты'],
+                })    
         
-            +dropdown-rooms-content({
-             rooms: 'спальни',
-             beds: 'кровати',
-             bathroom: 'ванные комнаты'
-        })
+           
 
         .form-input-default
             +titlebox('Text Field', 'Default')
@@ -114,9 +168,8 @@ html(lang='en')
                     name: "Email",
                     value: "",
                     placeholder: "Email"
-                })                
+                })               
     
-      
         .form-input-focus
             +titlebox('Text Field', 'HOVER / FOCUS')
             +form-input({
@@ -147,11 +200,8 @@ html(lang='en')
             date: '5 дней назад',
             text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.',
             like: "12"
-        })
-         
-        .checkbox-buttons-example
-            +titlebox('Checkbox Buttons') 
-            +checkbox-buttons
+        })  
+        
 
         .form-date-f1
             +titlebox('date Dropdown')

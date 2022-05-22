@@ -1,13 +1,15 @@
-mixin dropdown(name, array_btn, btn1, btn2)
+mixin dropdown(object)
     .dropdown
-        button.dropdown__btn= name
+        button.dropdown__btn= object.name
             +expand_more 
         .dropdown__content
-            -for(var i=0;  i<array_btn.length; i++)
-                .dropdown__choice= array_btn[i]
+            -for(var i=0;  i<object.btns.length; i++)
+                .dropdown__choice= object.btns[i]
                     +quantity_inner
             .dropdown-expanded-guests__button   
-                .dropdown-expanded-guests__button-clear(type = "button" value = "Очистить")= btn1   
-                .dropdown-expanded-guests__button-apply(type = "button" value = "Применить")= btn2
-            
+                .dropdown-expanded-guests__button-clear(type = "button" value = "Очистить")= object.clear   
+                .dropdown-expanded-guests__button-apply(type = "button" value = "Применить")= object.accept
+
+
+  
                 

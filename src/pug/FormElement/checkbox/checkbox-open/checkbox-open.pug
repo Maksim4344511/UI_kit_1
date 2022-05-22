@@ -1,23 +1,17 @@
-mixin checkbox-open(object)
+mixin checkbox-open(array)
     .checkbox-open__btn
-        +expand_more_open    
+        +expand_more_open
+        +expand_more_closed  
         button.checkbox-open__title expandable checkbox list  
-            #myDropdown.checkbox-open__expandable  
-                input#nomber1(type='checkbox').checkbox-open__input
-                label(for='nomber1').checkbox-open__label= object.name1
-                input#nomber2(type='checkbox' checked="checked").checkbox-open__input
-                label(for='nomber2').checkbox-open__label= object.name2
-                input#nomber3(type='checkbox' checked="checked").checkbox-open__input
-                label(for='nomber3').checkbox-open__label= object.name3
-                input#nomber4(type='checkbox' checked="checked").checkbox-open__input
-                label(for='nomber4').checkbox-open__label= object.name4
-                input#nomber5(type='checkbox').checkbox-open__input
-                label(for='nomber5').checkbox-open__label= object.name5
-                input#nomber6(type='checkbox').checkbox-open__input
-                label(for='nomber6').checkbox-open__label= object.name6
-                input#nomber7(type='checkbox').checkbox-open__input
-                label(for='nomber7').checkbox-open__label= object.name7
-                input#nomber8(type='checkbox').checkbox-open__input
-                label(for='nomber8').checkbox-open__label= object.name8
+            .checkbox-open__expandable
+                -for(var i=0;  i<array.length; i++)
+                    input.checkbox-open__input(id= array[i].id type='checkbox' checked= array[i].checked)
+                    label(for= array[i].id).checkbox-open__label= array[i].items
+
+               
+                
 
 
+
+          
+            

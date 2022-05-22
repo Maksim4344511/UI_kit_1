@@ -1,30 +1,9 @@
-mixin dropdown-mini
-    .dropdown-mini
-        button.dropdown-mini__btn= name
+mixin dropdown-rooms(object)
+    .dropdown-rooms
+        button.dropdown-rooms__btn= object.name
             +expand_more 
-
-
-
-
-
-
-mixin dropdown-rooms-content(object)
-    .dropdown-expanded-rooms__choice      
-        .dropdown-expanded-rooms__rooms
-            div= object.rooms
-            +quantity_inner            
-        .dropdown-expanded-rooms__beds
-            div= object.beds
-            +quantity_inner              
-        .dropdown-expanded-rooms__bathroom
-            div= object.bathroom
-            +quantity_inner
-
-
-    
-        
-             
-    
-                  
-                
-
+        .dropdown-rooms__content
+            -for(var i=0;  i<object.btns.length; i++)
+                .dropdown-rooms__choice= object.btns[i]
+                    +quantity_inner
+            

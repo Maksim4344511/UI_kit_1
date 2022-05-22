@@ -28,7 +28,7 @@ button.checkbox-open__title{
     text-align: left;
 }
 
-.checkbox-open__expandable{
+.checkbox-open__btn:hover .checkbox-open__expandable{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -36,13 +36,48 @@ button.checkbox-open__title{
     justify-content: space-between;
     margin-top: 17px;
 }
-.show_open {
+
+.checkbox-open__expandable{
     display: none;
 }
 
 .checkbox-open__input{
     display: none;
 }
+
+// меняею стрелочку, открыто на закрыто
+.checkbox-open__btn:hover .expand_more_closed{
+    display: none;
+}
+
+.checkbox-open__btn:hover .expand_more_open{
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    right: 0%;
+    top: 0px; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.expand_more_open{
+    display: none;
+} 
+.expand_more_closed{
+    position: absolute;
+    width: 44px;
+    height: 43px;
+    right: 0%;
+    top: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+
+
+
 .checkbox-open__label{
     width: 400px;
     color: rgba(31, 32, 65, 0.5);;
@@ -62,8 +97,7 @@ button.checkbox-open__title{
     width: 20px;
     min-width: 20px;
     height: 20px;
-    display: block;
-    
+    display: block;    
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 4px;
     margin-right: 9px;

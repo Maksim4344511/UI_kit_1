@@ -10,6 +10,11 @@ mixin find-rooms(guests)
                 +date-dropdown('ДД.ММ.ГГГГ')
         .find-rooms__guests          
             +titlebox('гости')              
-            +dropdown('Сколько гостей', ['взрослые', 'дети', 'младенцы'], 'Очистить', 'Применить') 
+            +dropdown({
+                name: 'Сколько гостей',
+                btns: ['взрослые', 'дети', 'младенцы'],
+                clear: 'Очистить',
+                accept: 'Применить'
+                 })       
         +button-payment('подобрать номер')
         
