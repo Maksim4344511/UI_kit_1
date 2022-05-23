@@ -6,15 +6,16 @@
     top: 1246px;
 }
 .checkbox-open__btn{
+    position: relative;
     width: 266px;
     height: 44px;
     cursor: pointer;
-    display: table-cell;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
 }
 
 button.checkbox-open__title{
-    width: 266px;
+    width: auto;
     height: 14px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -26,7 +27,7 @@ button.checkbox-open__title{
     border: none;
     background: none;
     text-align: left;
-}
+    }
 
 .checkbox-open__btn:hover .checkbox-open__expandable{
     display: flex;

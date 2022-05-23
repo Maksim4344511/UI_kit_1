@@ -1,8 +1,8 @@
-mixin checkbox-open(array)
+mixin checkbox-open(title, array)
     .checkbox-open__btn
         +expand_more_open
         +expand_more_closed  
-        button.checkbox-open__title expandable checkbox list  
+        button.checkbox-open__title= title 
             .checkbox-open__expandable
                 -for(var i=0;  i<array.length; i++)
                     input.checkbox-open__input(id= array[i].id type='checkbox' checked= array[i].checked)

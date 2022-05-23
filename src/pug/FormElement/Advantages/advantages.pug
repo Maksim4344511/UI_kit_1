@@ -1,9 +1,10 @@
 mixin advantages(img, title, description)    
     .advantages
-        div(class=img)
+        .insert_emoticon 
+            img(src= img)
         .advantages__text    
             .advantages__title= title
             .advantages__description= description
-//- не получается прописать путь к картинге через паг тег img, делаю через див и прописываю бэкграунт в свойствах.
+
 
 

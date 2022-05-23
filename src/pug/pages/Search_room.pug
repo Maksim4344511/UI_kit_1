@@ -1,0 +1,111 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title Document
+        include connecting.pug
+    body
+        .search-room
+            +header-f1
+            .search-room__content
+                .search-room__filter
+                    +titlebox('даты пребывания в отеле')
+                    +date-dropdown('19 авг - 23 авг') 
+                    +titlebox('гости')
+                    +dropdown-rooms({
+                        name: '3 гостя, 1 младенец',
+                        btns: ['взрослые', 'дети', 'младенцы'],
+                        clear: 'Очистить',
+                        accept: 'Применить'
+                    }) 
+                    +range-slider({
+                        title: "диапазон цены",
+                        text: "Стоимость за сутки пребывания в номере"
+                    }) 
+                    +titlebox('правила дома') 
+                    +checkbox-buttons([
+                    {   items: "Можно курить",
+                    id: 'btn1',
+                    checked: false                  
+                    },
+                    {   items: "Можно с питомцами",
+                    id: 'btn2',
+                    checked: ""                   
+                    },
+                    {   items: "Можно пригласить гостей (до 10 человек)",
+                    id: 'btn3',
+                    checked: ""                   
+                    }
+                    ])
+                    +titlebox('доступность') 
+                    +rich-checkbox-buttons([
+                    {
+                    title: "Широкий коридор",
+                    text: "Ширина коридоров в номере <br> не менее 91 см."
+                    },
+                    {
+                    title: "Помощник для инвалидов",
+                    text: "На 1 этаже вас встретит специалист<br> и проводит до номера."
+                    }
+                    ])
+                    +titlebox('удобства номера') 
+                    +dropdown-rooms({
+                    name: '2 спальни, 2 кровати...',
+                    btns: ['спальни', 'кровати', 'ванные комнаты'],
+                    }) 
+                    +checkbox-open("дополнительные удобства",
+                    [
+                    {
+                        items: "Завтрак",
+                        id: "open1",
+                        checked: false                  
+                    },
+                    {   
+                        items: "Письменный стол",
+                        id: "open2",
+                        checked: ""                   
+                    },
+                    {
+                        items: "Стул для кормления",
+                        id: "open3",
+                        checked: ""                   
+                    },
+                    {
+                        items: "Кроватка",
+                        id: "open4",
+                        checked: ""                   
+                    },
+                    {
+                        items: "Телевизор",
+                        id: "open5",
+                        checked: false                   
+                    },
+                    {
+                        items: "Шампунь",
+                        id: "open6",
+                        checked: false                  
+                    },
+                    {
+                        items: "Телевизор",
+                        id: "open7",
+                        checked: false                   
+                    },
+                    {
+                        items: "Шампунь",
+                        id: "open8",
+                        checked: false                  
+                    }
+                    ])
+   
+                    
+
+
+
+                .search-room__demand
+                    .search-room__demand-title 
+                    .search-room__demand-rooms 
+                    .search-room__demand-pagination
+            +footer
+

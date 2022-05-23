@@ -1,13 +1,15 @@
-mixin reviews(review_object)
+mixin reviews(array)
     .reviews
-        .reviews__author
-            div(class=review_object.img)
-            .reviews__author-data
-                .reviews__author-name= review_object.name
-                .reviews__author-date= review_object.date
-        .reviews__content
-            +like-buttons('like3', review_object.like, like2, rt)
-            .reviews__text= review_object.text         
+        -for(var i=0;  i<array.length; i++)
+            .reviews__author
+                .reviews__author-img-wrap
+                    img.reviews__author-img(src= array[i].img)
+                .reviews__author-data
+                    .reviews__author-name= array[i].name
+                    .reviews__author-date= array[i].date
+            .reviews__content
+                +like-buttons('like3', array[i].like, like2, rt)
+                .reviews__text= array[i].text         
 
 
-//- не получается прописать путь к картинге через паг тег img, делаю через див и прописываю бэкграунт в свойствах.
+

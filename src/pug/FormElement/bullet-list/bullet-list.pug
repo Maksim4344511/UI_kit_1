@@ -1,7 +1,7 @@
-mixin bullet-list
+mixin bullet-list(object)
     .bullet-list__title bullet list
     ul.bullet-list__list
-        li.bullet-list__point Нельзя с питомцами
-        li.bullet-list__point Без вечеринок и мероприятий
-        li.bullet-list__point Время прибытия — после 13:00, а выезд до 12:00
+        -for(var i=0;  i<object.length; i++)
+            li.bullet-list__point= object[i]
+            
 
