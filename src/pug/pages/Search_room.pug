@@ -97,15 +97,110 @@ html(lang='en')
                         id: "open8",
                         checked: false                  
                     }
-                    ])
-   
-                    
-
-
+                    ])  
 
                 .search-room__demand
-                    .search-room__demand-title 
-                    .search-room__demand-rooms 
+                    .search-room__demand-title Номера, которые мы для вас подобрали
+                    .search-room__demand-rooms
+                        +room-image2({
+                            number : '888',
+                            category : 'люкс',
+                            price : '9 990₽',       
+                            img : './img/rooms/image2.png',
+                            reviews : '145',  
+                            stars1 : 5,
+                            stars2 : 0,
+                        })
+                        +room-image({
+                            number : '840',
+                            price : '9 900₽',       
+                            img : './img/rooms/image1.png',
+                            reviews : '65',  
+                            stars1 : 4,
+                            stars2 : 1,
+                        })
+                        +room-image({
+                            number : '980',
+                            price : '8 500₽',       
+                            img : './img/rooms/image1.png',
+                            reviews : '35',  
+                            stars1 : 3,
+                            stars2 : 2,
+                        })
+                        +room-image({
+                            number : '856',
+                            price : '7 300₽',       
+                            img : './img/rooms/image1.png',
+                            reviews : '19',  
+                            stars1 : 5,
+                            stars2 : 0,
+                        }) 
+                        +room-image({
+                            number : '740',
+                            price : '6 000₽',       
+                            img : './img/rooms/image1.png',
+                            reviews : '44',  
+                            stars1 : 4,
+                            stars2 : 1,
+                        })
+                        +room-image({
+                            number : '982',
+                            price : '5 800₽',       
+                            img : './img/rooms/image1.png',
+                            reviews : '56',  
+                            stars1 : 3,
+                            stars2 : 2,
+                        })
+                        +room-image({
+                            number : '678',
+                            price : '5 500₽',       
+                            img : './img/rooms/image1.png',
+                            reviews : '45',  
+                            stars1 : 5,
+                            stars2 : 0,
+                        })
+                        +room-image({
+                            number : '450',
+                            price : '5 300₽',       
+                            img : './img/rooms/image1.png',
+                            reviews : '39',  
+                            stars1 : 4,
+                            stars2 : 1,
+                        })
+                        +room-image({
+                            number : '350',
+                            price : '5 000₽',       
+                            img : './img/rooms/image1.png',
+                            reviews : '77',  
+                            stars1 : 3,
+                            stars2 : 2,
+                        })
+                        +room-image({
+                            number : '666',
+                            price : '5 000₽',       
+                            img : './img/rooms/image1.png',
+                            reviews : '25',  
+                            stars1 : 5,
+                            stars2 : 0,
+                        })
+                        +room-image({
+                            number : '444',
+                            price : '5 000₽',       
+                            img : './img/rooms/image1.png',
+                            reviews : '15',  
+                            stars1 : 3,
+                            stars2 : 2,
+                        })
+                        +room-image({
+                            number : '352',
+                            price : '5 000₽',       
+                            img : './img/rooms/image1.png',
+                            reviews : '55',  
+                            stars1 : 3,
+                            stars2 : 2,
+                        })
+                       
                     .search-room__demand-pagination
+                        +pagination
             +footer
 

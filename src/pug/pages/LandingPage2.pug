@@ -1,0 +1,10 @@
+extends ../layout
+
+
+block prepend heading
+    title LandingPage
+
+block main
+    .landing-page__img                
+        +find-rooms('first')
+        .landing-page__slogan Лучшие номера для вашей работы, отдыха и просто вдохновения
