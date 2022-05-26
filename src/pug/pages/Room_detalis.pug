@@ -4,18 +4,50 @@ extends ../layout
 block prepend heading
     title Search room
 block main    
-    .room-detalis     
-        .room-detalis__picture       
-            img(src="", alt="")
-            img(src="", alt="")
-            img(src="", alt="")
-        .room-detalis__info 
-            .room-detalis__info-description
-                .room-detalis__info-description-extra
-                    .room-detalis__info-description-extra-int 
-                    .room-detalis__info-description-extra-stat
-                .room-detalis__info-description-reviews 
-                .room-detalis__info-description-booking
-                    .room-detalis__info-description-booking-rules
-                    .room-detalis__info-description-booking-cancell
-            .room-detalis__info-card
+    .room-detalis
+        .room-detalis-content     
+            .room-detalis__picture       
+                .room-detalis__picture-big 
+                    img(src="./img/rooms/BigImage2.png")
+                .room-detalis__picture-mini     
+                    img(src="./img/rooms/BigImage4.png")
+                    img(src="./img/rooms/BigImage3.png")
+            .room-detalis__info 
+                .room-detalis__info-description
+                    .room-detalis__info-description-extra
+                        .room-detalis__info-description-extra-int
+                            .room-detalis__info-description-extra-int-title Сведения о номере
+                            +advantages('./img/insert_emoticon.svg', "Комфорт", 'Шумопоглощающие стены')
+                            +advantages('./img/location_city.svg', "Удобство", 'Окно в каждой из спален')
+                            +advantages('./img/whatshot.svg', "Уют", 'Номер оснащён камином') 
+                        .room-detalis__info-description-extra-stat
+                    .room-detalis__info-description-reviews 
+                        .room-detalis__info-description-reviews-title 
+                            .room-detalis__info-description-reviews-title-name Отзывы посетителей номера
+                            .room-detalis__info-description-reviews-title-reviews 2 отзыва
+                        +reviews([{
+                                    img: './img/image.jpg',
+                                    name: 'Мурад Сарафанов',
+                                    date: '5 дней назад',
+                                    text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.',
+                                    like: "12"
+                                }])
+                        +reviews([{
+                                    img: './img/Patris.png',
+                                    name: 'Патрисия Стёклышкова',
+                                    date: 'Неделю назад',
+                                    text: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент',
+                                    like: "2"
+                                }])    
+
+                    .room-detalis__info-description-booking
+                        .room-detalis__info-description-booking-rules
+                            .room-detalis__info-description-booking-rules-title Правила
+                            +bullet-list(["Нельзя с питомцами ", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00"])
+                        .room-detalis__info-description-booking-cancell
+                            .room-detalis__info-description-booking-cancell-title Отмена
+                            .room-detalis__info-description-booking-cancell-text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+
+                .room-detalis__info-card
+                    +room-details  -//добавить переменных в миксин-//
+                

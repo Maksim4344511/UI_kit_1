@@ -1,6 +1,140 @@
+
+
 .room-detalis{
     position: relative;
     max-width: 1440px;    
     background: #FFFFFF;    
-    overflow: hidden;    
+    overflow: hidden;   
+    
+}
+.room-detalis-content{
+    height: 1424px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;    
+    max-width: 1440px;        
+}
+
+
+.room-detalis__picture{
+    display:flex;   
+}
+
+.room-detalis__picture-mini,
+.room-detalis__picture-big {
+    display:flex;
+    flex-direction: column; 
+    margin: 0;
+    flex-grow: 1;  
+}
+
+.room-detalis__info{    
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+    margin-top: 4.861%;
+    margin-bottom: 4.861%;
+    margin-right: 9.722%;
+    margin-left: 9.722%;
+}
+
+.room-detalis__info-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 4.861%;     
+
+}
+
+.room-detalis__info-description-extra{
+    display: flex;    
+    justify-content: space-between;
+}
+
+.room-detalis__info-description-extra-int{
+    margin-right: 5.625%;
+}
+.room-detalis__info-description-extra-int-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1F2041;
+    margin-bottom: 20px;
+}
+
+
+.room-detalis__info-description-reviews{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.room-detalis__info-description-reviews-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    margin-bottom: 20px;
+}
+
+
+.room-detalis__info-description-reviews-title-name{    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1F2041;
+    margin-bottom: 20px;
+}
+
+
+.room-detalis__info-description-reviews-title-reviews{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: right;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.room-detalis__info-description-booking{
+    display: flex;
+    justify-content: space-between;
+}
+.room-detalis__info-description-booking-rules{
+    margin-right: 6.944%;
+}
+.room-detalis__info-description-booking-rules-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1F2041;  
+    margin-bottom: 20px;  
+}
+.room-detalis__info-description-booking-cancell{
+    display: flex;
+    flex-direction: column;
+}
+
+.room-detalis__info-description-booking-cancell-title{   
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1F2041;
+    margin-bottom: 20px;
+}
+
+.room-detalis__info-description-booking-cancell-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
 }

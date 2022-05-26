@@ -8,7 +8,7 @@ mixin reviews(array)
                     .reviews__author-name= array[i].name
                     .reviews__author-date= array[i].date
             .reviews__content
-                +like-buttons('like3', array[i].like, like2, rt)
+                +like-buttons(array[i].like, array[i].like, like2, array[i].like)
                 .reviews__text= array[i].text         
 
 
