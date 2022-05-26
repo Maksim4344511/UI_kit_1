@@ -1,7 +1,7 @@
 .titlebox {
     display: flex;
     justify-content: space-between; 
-    align-items: center;  
+    margin-bottom: 5px;
 }
 
 .titlebox__title {
@@ -23,5 +23,5 @@
     text-align: right;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5);  
-    margin-bottom: 3px;   
+    margin-bottom: 1px;   
 }

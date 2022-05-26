@@ -1,8 +1,8 @@
 mixin rich-checkbox-buttons(array)
     .rich-checkbox-buttons__checkbox
         -for(var i=0;  i<array.length; i++)
-            input#richbtn1(type='checkbox').rich-checkbox-buttons__input
-            label(for='richbtn1').rich-checkbox-buttons__label
+            input(id= array[i].id type='checkbox' checked= array[i].checked).rich-checkbox-buttons__input
+            label(for= array[i].id).rich-checkbox-buttons__label
                 .rich-checkbox-buttons__label-title= array[i].title
                 .rich-checkbox-buttons__label-decryption!= array[i].text
             

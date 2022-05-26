@@ -1,15 +1,12 @@
-doctype html
-html(lang='en')
-    head
-        meta(charset='UTF-8')
-        meta(http-equiv='X-UA-Compatible' content='IE=edge')
-        meta(name='viewport' content='width=device-width, initial-scale=1.0')
-        title Document
-        include connecting.pug
-    body
-        .landing-page
-            +header-f1
-            .landing-page__img                
-                +find-rooms('first')
-                .landing-page__slogan Лучшие номера для вашей работы, отдыха и просто вдохновения
-            +footer
+extends ../layout
+
+
+block prepend heading
+    title LandingPage
+
+block main    
+    .landing-page   
+        .landing-page__img                
+            +find-rooms('first')
+            .landing-page__slogan Лучшие номера для вашей работы, отдыха и просто вдохновения
+        

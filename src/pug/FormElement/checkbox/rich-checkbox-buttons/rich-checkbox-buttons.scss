@@ -22,7 +22,7 @@
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 18px;
+    margin-top: 8px;
 }
 
 .rich-checkbox-buttons__input{
@@ -35,7 +35,7 @@
     align-items: flex-start;
     width: 260px;
     height: 52px;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .rich-checkbox-buttons__label:before {
@@ -47,15 +47,16 @@
     display: block;
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 4px;
-    margin-right: 9px;
     
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .rich-checkbox-buttons__input:checked + .rich-checkbox-buttons__label::before{
     border-color: #BC9CFF;
     content:  url("/src/img/Vector.svg");
-    padding-left: 4px;
-    padding-top: 2px;
+    
 }
 
 .rich-checkbox-buttons__label-title{
@@ -63,9 +64,10 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;    
+    font-size: 14px;
+    line-height: 18px;
     color: rgba(31, 32, 65, 0.75);
-    text-transform: none;
+    margin-left: 9px;
 }
 
 
@@ -75,9 +77,8 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;    
+    font-size: 12px;
+    line-height: 14px;
     color: rgba(31, 32, 65, 0.5);
-    padding-left: 31px;
-    text-transform: none;
-
+    margin-left: 31px;
 }
