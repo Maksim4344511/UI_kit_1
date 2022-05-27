@@ -42,7 +42,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 4.861%;     
+    margin-right:6%;     
 
 }
 
@@ -60,14 +60,13 @@
     font-weight: 700;
     font-size: 19px;
     line-height: 23px;
-    color: #1F2041;
-    margin-bottom: 20px;
+    color: #1F2041;    
 }
 
 
 .room-detalis__info-description-reviews{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .room-detalis__info-description-reviews-title{
@@ -75,6 +74,7 @@
     align-items: center;
     justify-content: space-between;  
     margin-bottom: 20px;
+    
 }
 
 
@@ -85,7 +85,7 @@
     font-size: 19px;
     line-height: 23px;
     color: #1F2041;
-    margin-bottom: 20px;
+    
 }
 
 
@@ -94,17 +94,17 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 14px;
-    text-align: right;
+    line-height: 14px;    
     color: rgba(31, 32, 65, 0.5);
 }
 
 .room-detalis__info-description-booking{
     display: flex;
     justify-content: space-between;
+    
 }
 .room-detalis__info-description-booking-rules{
-    margin-right: 6.944%;
+    margin-right: 104px;
 }
 .room-detalis__info-description-booking-rules-title{
     font-family: 'Montserrat';
@@ -114,6 +114,7 @@
     line-height: 23px;
     color: #1F2041;  
     margin-bottom: 20px;  
+    margin-left:20px;
 }
 .room-detalis__info-description-booking-cancell{
     display: flex;
